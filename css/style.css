@@ -598,15 +598,15 @@ border-bottom: none;
 .history_title,
 .magazine_title,
 .food_safety_title {
-  width: 150px;
-  height: 50px;
+  width: 100px;
+  height: 30px;
   position: absolute;
   top: 10px;
   left: 10px;
   background-color: rgba(0, 0, 0, 0.275);
   text-align: center;
   color: #fff;
-  line-height: 50px;
+  line-height: 30px;
 }
 .contribute_title p,
 .history_title p,
@@ -617,6 +617,9 @@ border-bottom: none;
 }
 
 
+.bottom_banner .tit p {
+  font-size: 14px;
+}
 
 
 
@@ -744,8 +747,6 @@ border-bottom: none;
 #commuity_chk ~ .community_site {
   display: none;
 }
-
-
 
 .foot_text_box {
   width: 68%;
