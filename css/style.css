@@ -179,6 +179,11 @@ color: black;}
 }
 
 
+
+
+
+
+
 /* new_product_item_mobile */
 .new_product_item_mobile {
   position: relative;
@@ -774,4 +779,21 @@ border-bottom: none;
 
 .foot_text_box ul li {
   padding: 5px 0;
+}
+
+
+@media all and (min-width:601px) {
+  .visual_main {
+    height: 465px;
+  }
+  .new_product_silck {
+    height: 550px;
+  }
+  .sck {
+    height: 450px;
+  }
+  .sck {
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
 }
