@@ -687,6 +687,7 @@ border-bottom: none;
   float: left;
   text-align: center;
   margin-top: 10px;
+  line-height: 20px;
 }
 .label_community {
   margin-right: 0;
