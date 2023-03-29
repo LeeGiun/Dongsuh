@@ -490,6 +490,13 @@ body, html {width: 100%;}
   width: 50%;
   float: left;
 }
+.max_plant_logo img,
+.max_plant_href img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .max_plant_href p {
   position: absolute;
   left: 15px;
