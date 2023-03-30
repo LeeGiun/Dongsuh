@@ -686,10 +686,12 @@ border-bottom: none;
 }
 
 
-.bottom_banner .tit p {
+.bottom_banner .tit a {
   font-size: 14px;
+  color: #fff;
+  font-family: 'NotoSansKR';
+  display: block;
 }
-
 
 
 /* footer */
