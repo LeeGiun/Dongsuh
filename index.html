@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./font/stylesheet.css">
+  <link rel="stylesheet" href="./font/Noto_Sans_KR_FONT/stylesheet.css">
+  <link rel="stylesheet" href="./font/Anton_FONT/stylesheet.css">
   <title>DongSuh_Food</title>
 </head>
 <body>
@@ -115,17 +116,16 @@
 
 
     <div class="visual_main">
-      <div class="visual_main_box">
-        <video controls autoplay name="pr_video">
-          <source src="https://www.dongsuh.co.kr/2017/video/0717_FULL_A.mp4">
-        </video>
+      <div class="visual_main_box" id="visual_box">
+          <iframe width="100%" height="218px" autoplay src="https://www.youtube.com/embed/O57X0CGLIvc" title="카누 하우스에 놀러오세요 ♡ with 공유" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div> <!-- // .visual_main_box END -->
     </div> <!-- // .visual_main END -->
 
 
     <div class="new_product_item_mobile">
       <div class="new_product_title_mobile title">
-        <p><i class="far fa-star"></i> 신제품 <i class="far fa-star"></i></p>
+        <p><i class="far fa-star"></i> NEW PRODUCT <i class="far fa-star"></i></p>
+        <h5>동서에서 새롭게 나온 제품!</h5>
       </div>
       <div class="new_product_box_mobile">
         <div class="new_product_silck">
@@ -167,7 +167,8 @@
 
     <div class="item_box_tab">
       <div class="item_box_title title">
-        <p>동서식품 제품 소개</p>
+        <p>BRAND PRODUCT</p>
+        <h3>동서식품의 다양한 제품 소개!</h3>
         <a href="#!" class="item_more more_bttn">더보러가기+</a>
       </div>
       <input type="checkbox" id="more_chk1">
@@ -296,7 +297,13 @@
     </div>
 
 
-
+<div class="div1">
+  <div class="div11">
+    <div class="div22"><img src="" alt=""></div>
+    <div class="div22"></div>
+    <div class="div22"></div>
+  </div>
+</div>
 
 
 
@@ -517,6 +524,37 @@
     });
     });
   </script>
+
+
+<script>
+var player;
+function onYouTubeIframeAPIReady() {
+	player = new YT.Player('visual_box', {
+		videoId: 'zCxMNqXH1Ns', //유튭 영상ID
+		playerVars: {   
+				'autoplay': 1, //자동재생
+				'rel': 0,
+				'showinfo': 0,
+				'modestbranding': 1,
+				'playsinline': 1,
+				'rel': 0,
+				'controls': 1,	//youtube 콘트롤 표시
+				'color':'white',
+				'loop': 1, //반복 여부  
+		},
+		events: {
+		'onReady': onPlayerReady,
+		}
+	});
+}
+
+function onPlayerReady(event) {
+	player.playVideo();
+	player.mute(); //자동재생하려면 mute해야함
+}
+
+</script>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
   </script>

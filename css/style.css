@@ -7,6 +7,7 @@ color: black;}
 
 
 /* font-family: 'NotoSansKR'; */
+/* font-family: 'Anton'; */
 
 body, html {width: 100%;}
 .nav_PC {display: none;}
@@ -34,19 +35,28 @@ body, html {width: 100%;}
   font-weight: bold;
   text-align: center;
   margin: 20px 0;
-  border-bottom: 1px solid red;
   font-family: 'NotoSansKR';
 }
 .new_product_title_mobile p {
-  width: 35%;
-  height: 40px;
-  border-bottom: 1px solid red;
+  width: 300px;
+  height: 50px;
   box-sizing: border-box;
   margin: 0 auto;
-  
+  font-family: 'Anton';
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+.new_product_title_mobile h5 {
+  width: 250px;
+  height: 50px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: 'NotoSansKR';
+  text-align: center;
+  font-weight: normal;
 }
 .max_plant_title p {
-  width: 50%;
+  width: 190px;
   height: 40px;
   margin: 0 auto;
   margin-bottom: 25px;
@@ -58,17 +68,29 @@ body, html {width: 100%;}
   margin-bottom: 30px;
 }
 .item_box_title p {
-  width: 50%;
+  width: 220px;
   margin: 0 auto;
   font-family: "Font Awesome 5 Free";
   padding-bottom: 10px;
+  font-size: 25px;
+  font-family: 'Anton';
+  letter-spacing: 3px;
+  text-align: center;
 }
+.item_box_title h3 {
+  width: 220px;
+  margin: 0 auto;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}
+
 .CF_title {
   position: relative;
 }
 
 .CF_title p {
-  width: 30%;
+  width: 120px;
   height: 40px;
   margin: 20px auto;
 }
@@ -84,7 +106,7 @@ body, html {width: 100%;}
   margin-bottom: 15px;
 }
 .news_title p {
-  width: 40%;
+  width: 150px;
   height: 40px;
   margin: 0 auto;
   text-align: center;
@@ -132,6 +154,7 @@ body, html {width: 100%;}
 /* gnb */
 .gnb {
   position: absolute;
+  z-index: 500;           /* z-index: 500; */
   right: 0;
   top: 0;
   width: 125px;
@@ -167,7 +190,13 @@ body, html {width: 100%;}
 
 /* logo */
 .logo {
-  width: 125px;
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 400;           /* z-index: 400; */
+}
+.logo_img {
+  width: 140px;
   height: 115px;
   margin: 0 auto;
 }
@@ -217,7 +246,7 @@ body, html {width: 100%;}
 .ham_logo {
   width: 60px;
   height: 60px;
-  margin: 8px auto 50px;
+  margin: 8px auto 30px;
 }
 .ham_logo img {
   width: 100%;
@@ -225,9 +254,9 @@ body, html {width: 100%;}
   display: block;
 }
 .la_hm {
-  padding: 15px 0 0 15px;
   text-align: left;
   font-size: 28px;
+  margin-left: 15px;
   margin-top: 60px;
 }
 .ham_menu_sheet {
@@ -328,7 +357,7 @@ body, html {width: 100%;}
 }
 
 .span_bttn{
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #ccc;
 }
 
@@ -355,11 +384,11 @@ body, html {width: 100%;}
 /* visual_main */
 .visual_main {
   width: 100%;
-  height: 200px;
+  height: 220px;
   margin-bottom: 40px;
   float: left;
 }
-.visual_main video {
+.visual_main_box video {
   width: 100%;
   height: auto;
   display: block;
@@ -970,7 +999,21 @@ border-bottom: none;
 
 
 
+.div1 {
+  width: 100%;
+}
 
+.div11 {
+  width: 390px; 
+  height: 200px;
+  margin: 0 auto;
+}
+
+.div11 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 
 /* MEDIA ================================== */
@@ -1004,11 +1047,11 @@ border-bottom: none;
   }
   .title p {font-size: 26px;}
   .new_product_title_mobile p {
-    width: 22%;
+    width: 180px;
     height: 60px;
   }
   .max_plant_title p {
-    width: 30%;
+    width: 235px;
     height: 60px;
   }
   .max_plant_title,
@@ -1016,7 +1059,7 @@ border-bottom: none;
     margin: 50px auto;
   }
   .CF_title p {
-    width: 18%;
+    width: 140px;
     height: 60px;
   }
   .CF_banner,
@@ -1029,7 +1072,7 @@ border-bottom: none;
     margin-bottom: 30px;
   }
   .news_title p {
-    width: 45%;
+    width: 185px;
   }
   .bottom_banner .tit {
     margin-top: 22px;
@@ -1246,7 +1289,9 @@ border-bottom: none;
   }
 
 
-
+  .item_label_box {
+    margin-top: 30px;
+  }
   .item_sheet1 {display: block;}
   .item_sheet2 {display: block;}
 
@@ -1255,7 +1300,7 @@ border-bottom: none;
     margin-bottom: 50px;
   }
   .item_box_title p {
-    width: 30%;
+    width: 235px;
     padding-bottom: 25px;
   }
   .sheet_tap {
