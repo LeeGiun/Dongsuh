@@ -24,6 +24,8 @@ body, html {width: 100%;}
 .gnb_PC {display: none;}
 .item_hover {display: none;}
 .CF_box3, .CF_box4{display: none;}
+.btn_mogile {display: block;}
+.btn_PC {display: none;}
 
 
 /* header ======================= */
@@ -706,6 +708,16 @@ body, html {width: 100%;}
   60% {background: url(./back_img/maxim\ plant4_tab.jpg) no-repeat;}
   80% {background: url(./back_img/maxim\ plant5_tab.jpg) no-repeat;}
   100% {background: url(./back_img/maxim\ plant1_tab.jpg) no-repeat;}
+}
+
+@keyframes ani-flant_PC {
+  0% {background: url(./back_img/maxim\ plant1_PC.jpg) no-repeat;}
+  20% {background: url(./back_img/maxim\ plant2_PC.jpg) no-repeat;}
+  40% {background: url(./back_img/maxim\ plant3_PC.jpg) no-repeat;
+  }
+  60% {background: url(./back_img/maxim\ plant4_PC.jpg) no-repeat;}
+  80% {background: url(./back_img/maxim\ plant5_PC.jpg) no-repeat;}
+  100% {background: url(./back_img/maxim\ plant1_PC.jpg) no-repeat;}
 }
 
 /* max_plant_banner */
@@ -1469,6 +1481,10 @@ border-bottom: none;
   .CF_box3, .CF_box4{display: block;}
   .gnb_mobile{ display: none;}
   .gnb_PC {display: block;}
+  .btn_mogile {display: none;}
+  .btn_PC {display: block;}
+
+
   .logo {
     width: 300px;
     height: 200px;
@@ -1652,7 +1668,6 @@ border-bottom: none;
     width: 1274px;
     height: 720px;
     margin: 0 auto;
-    background-color: pink;
   }
   .new_product_item_mobile_box {
     width: 1274px;
@@ -1793,7 +1808,24 @@ border-bottom: none;
     height: 600px;
     background-size: cover;
   }
-
+  .max_plant_img {
+    animation: ani-flant_PC;
+    animation-duration: 15s;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+    background-size: cover;
+    box-sizing: border-box;
+    margin-right: 15px;
+  }
+  .max_plant_logo_tab {
+    width: 380.2px;
+    height: 295px;
+    margin-bottom: 10px;
+  }
+  .max_plant_href_tab {
+    width: 380.2px;
+    height: 295px;
+  }
 
 
 
@@ -1857,15 +1889,15 @@ border-bottom: none;
     line-height: 35px;
   }
 
+  .visual_main {
+    width: 100%;
+    background-color: #000;
+  }
 
-  /* MAXIM PLANT */
-  /* 이미지 수정해야함. */
-  /* 나머지 박스 2개 width 376.2px */
-
-  /* HISTORY, MAGAZINE, FOOD SATETY */
-  /* 영역에 맞게 이미지 수정해야함 */
 
   /* FOOTER CHECK박스 영역 백그라운드 빼기 */
   
   /* TITLE 글자 크기 수정해야함. */
+  /* 전체적인 색상 넣거나 수정해야함 */
+  /* 예를 들어 타이틀 백그라운드 #eee */
 }
