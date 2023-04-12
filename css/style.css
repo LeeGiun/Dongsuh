@@ -4,10 +4,13 @@ a {text-decoration: none;
 color: black;}
 
 /* ********************************* */
-
-
+/* 포인트 #F55050 */
 /* font-family: 'NotoSansKR'; */
-/* font-family: 'Anton'; */
+/* font-family: 'Anton';  영문용 */
+/* font-family: 'Black Han Sans';  한글용 */
+/* font-family: 'Sunflower'; 로고 TXT용 */
+/* FD8A8A */
+
 
 body, html {width: 100%;}
 .nav_PC {display: none;}
@@ -15,13 +18,10 @@ body, html {width: 100%;}
 .max_plant_logo_tab {display: none;}
 .max_plant_href_tab {display: none;}
 .contribute_box_tab {display: none;}
-.logo_img img:nth-child(2) {display: none;}
 .news_text li:nth-child(8) {display: none;}
 .news_text li:nth-child(9) {display: none;}
 .news_text li:last-child {display: none;}
 .nav_PC {display: none;}
-.gnb_mobile{ display: block;}
-.gnb_PC {display: none;}
 .item_hover {display: none;}
 .CF_box3, .CF_box4{display: none;}
 .btn_mogile {display: block;}
@@ -32,7 +32,7 @@ body, html {width: 100%;}
 .header {
   position: relative;
   width: 100%;
-  height: 115px;
+  height: 125px;
   margin-bottom: 15px;
   font-family: 'NotoSansKR';
 }
@@ -153,14 +153,20 @@ body, html {width: 100%;}
   position: absolute;
   right: 15px;
   top: 5px;
-  border: 1px solid #ccc;
-  padding: 5px 10px;
+  background-color: #FD8A8A;
+  color: #fff;
+  width: 55px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
   border-radius: 5px;
+  font-weight: bold;
 }
 .more_bttn a{
   display: block;
   font-weight: bold;
   font-size: 10px;
+  color: #fff;
 }
 
 
@@ -177,62 +183,62 @@ body, html {width: 100%;}
 
 /* gnb */
 .gnb {
-  position: absolute;
-  z-index: 500;           /* z-index: 500; */
-  right: 0;
-  top: 0;
-  width: 125px;
-  height: 30px;
-  float: left;
-  background-color: #eee;
+  position: relative;
+  width: 100%;
+  height: 25px;
   font-size: 10px;
-  line-height: 30px;
-  border-radius: 5px;
-  padding: 4px;
-  box-sizing: border-box;
-  float: left;
+  background-color: #eee;
 }
-.gnb a {
-  display: block;
-}
-.gnb_bar {
-  width: 2%;
-  height: 20px;
-  border-right: 1px solid #bbb;
-  box-sizing: border-box;
-  float: left;
+.gnb_box {
+  position: absolute;
+  z-index: 22;
+  top: 5px;
+  right: 5px;
 }
 .gnb_top {
-  width: 49%;
-  height: 25px;
-  line-height: 25px;
-  float: left;
+  width: 50px;
+  height: 20px;
   text-align: center;
+  float: left;
 }
-.login_box {
-  border-right: 1px solid #eee;
-  box-sizing: border-box;
+.gnb_top a {
+  color: #FD8A8A;
+  display: block;
 }
 
 
 /* logo */
 .logo {
-  width: 300px;
-  margin: 0 auto;
   position: relative;
-  z-index: 400;           /* z-index: 400; */
-}
-.logo_img {
-  width: 140px;
+  z-index: 22;
+  width: 55%;
   height: 115px;
   margin: 0 auto;
 }
-.logo img {
+.logo_box {
+  width: 160px;
+  height: 115px;
+  text-align: center;
+  line-height: 115px;
+  font-family: 'Sunflower';
+  font-size: 20px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  color: #F55050;
+  float: left;
+}
+.logo_box_img {
+  width: 50px;
+  height: 115px;
+  float: left;
+  padding-top: 32.5px;
+  box-sizing: border-box;
+}
+.logo_box_img img {
   width: 100%;
   height: auto;
   display: block;
 }
-
 
 
 
@@ -412,7 +418,6 @@ body, html {width: 100%;}
 .visual_main {
   width: 100%;
   height: 220px;
-  margin-bottom: 40px;
   float: left;
 }
 .visual_main_box video {
@@ -430,6 +435,9 @@ body, html {width: 100%;}
 .new_product_item_mobile {
   position: relative;
   width: 100%;
+  padding-top: 40px;
+  box-sizing: border-box;
+  background-color: #eee;
   float: left;
 }
 
@@ -465,7 +473,7 @@ body, html {width: 100%;}
 .slick-center p {
   font-size: 10px;
   font-weight: bold;
-  color: red;
+  color: #F55050;
 }
 
 @keyframes pro1 {
@@ -491,6 +499,7 @@ body, html {width: 100%;}
   font-weight: 900;
   font-size: 40px;
   visibility: visible;
+  color: #FD8A8A;
 }
 .new_product_silck .slick-next::after {
   width: 45px;
@@ -504,6 +513,7 @@ body, html {width: 100%;}
   font-weight: 900;
   font-size: 40px;
   visibility: visible;
+  color: #FD8A8A;
 }
 
 
@@ -533,7 +543,8 @@ body, html {width: 100%;}
   text-align: center;
   line-height: 30px;
   border-radius: 5px;
-  background-color: #eee;
+  background-color: #F55050;
+  color: #fff;
 }
 
 .item_sheet_box {
@@ -760,9 +771,191 @@ body, html {width: 100%;}
 
 
 
+
+
+
+
+/* brand_product_banner */
+.brand_product_banner{
+  width: 100%;
+  height: 650px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  float: left;
+}
+.brand_product_box {
+  width: 100%; /* 8칼럼+7여백 */
+  height: 400px;
+  margin: 0 auto;
+}
+.brand_label_box label {
+  height: 30px;
+  font-family: 'NotoSansKR';
+  font-size: 11px;
+  text-align: center;
+  display: inline-block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.brand_label1 {
+  margin-left: 20px;
+}
+.brand_label7 {
+  margin-left: 3px;
+}
+.brd_sht {
+  display: none;
+}
+.brd_sht img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.brand_product_box input {
+  display: none;
+}
+
+
+#brand_chk1:checked ~ .brand_sheet1 {
+  display: block;
+  background: url(./back_img/brand_back1_mobile.jpg) no-repeat;
+}
+#brand_chk2:checked ~ .brand_sheet2 {
+  display: block;
+  background: url(./back_img/brand_back2_mobile.jpg) no-repeat;
+}
+#brand_chk3:checked ~ .brand_sheet3 {
+  display: block;
+  background: url(./back_img/brand_back3_mobile.jpg) no-repeat;
+}
+#brand_chk4:checked ~ .brand_sheet4 {
+  display: block;
+  background: url(./back_img/brand_back4_mobile.jpg) no-repeat;
+}
+#brand_chk5:checked ~ .brand_sheet5 {
+  display: block;
+  background: url(./back_img/brand_back5_mobile.jpg) no-repeat;
+}
+#brand_chk6:checked ~ .brand_sheet6 {
+  display: block;
+  background: url(./back_img/brand_back6_mobile.jpg) no-repeat;
+}
+#brand_chk7:checked ~ .brand_sheet7 {
+  display: block;
+  background: url(./back_img/brand_back7_mobile.jpg) no-repeat;
+}
+#brand_chk8:checked ~ .brand_sheet8 {
+  display: block;
+  background: url(./back_img/brand_back8_mobile.jpg) no-repeat;
+}
+#brand_chk9:checked ~ .brand_sheet9 {
+  display: block;
+  background: url(./back_img/brand_back9_mobile.jpg) no-repeat;
+}
+#brand_chk10:checked ~ .brand_sheet10 {
+  display: block;
+  background: url(./back_img/brand_back10_mobile.jpg) no-repeat;
+}
+#brand_chk11:checked ~ .brand_sheet11 {
+  display: block;
+  background: url(./back_img/brand_back11_mobile.jpg) no-repeat;
+}
+#brand_chk12:checked ~ .brand_sheet12 {
+  display: block;
+  background: url(./back_img/brand_back12_mobile.jpg) no-repeat;
+}
+.brd_sht {
+  width: 100%;
+  height: 450px
+}
+.brand_logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.brand_logo {
+  width: 300px;
+  height: 310px;
+  margin: 0 auto;
+}
+.brand_starbucks_logo img,
+.brand_top_logo img,
+.brand_maxWell_logo img,
+.brand_post_logo img {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.brand_oreo_logo img {
+  padding-top: 20px;
+}
+.brand_label_box {
+  width: 390px;
+  height: 100px;
+  line-height: 35px;
+  margin: 0 auto;
+  padding-top: 15px;
+  background-color: #FD8A8A;
+  color: #fff;
+}
+.brand_label_box label {
+  padding: 5px 10px;
+}
+.brand_label_box label:hover {
+  color: #fff;
+  background-color: #F55050;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.brand_box2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.brand_img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.brand_img {
+  position: relative;
+  width: 194px;
+  height: 305px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+.brand_txt {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* CF_banner */
 .CF_banner {
   width: 100%;
+  background-color: #eee;
+  padding-bottom: 30px;
   float: left;
 }
 
@@ -850,12 +1043,12 @@ border-bottom: none;
   width: 100px;
   height: 30px;
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 10px;
   background-color: rgba(0, 0, 0, 0.275);
   text-align: center;
   color: #fff;
-  line-height: 30px;
+  line-height: 35px;
 }
 .contribute_title p,
 .history_title p,
@@ -875,7 +1068,7 @@ border-bottom: none;
 
 
 /* footer */
-.footer {
+.footer_box {
   position: relative;
   width: 100%;
   height: 250px;
@@ -956,7 +1149,7 @@ border-bottom: none;
   position: relative;
   width: 103%;
   height: 210px;
-  background-color: rgba(0, 0, 0, 0.959);
+  background-color: #eee;
   position: absolute;
   top: -10px;
   text-align: center;
@@ -965,10 +1158,10 @@ border-bottom: none;
 }
 .site_box li a {
   display: block;
-  color: #fff;
+  color: #222;
 }
 .site_box li {
-  padding: 10px 0;
+  padding: 16px 0;
   border-bottom: 1px solid #ccc;
 }
 
@@ -977,7 +1170,7 @@ border-bottom: none;
   bottom: 10px;
   right: 10px;
   border: none;
-  color: #fff;
+  color: #222;
 }
 
 #brand_chk,
@@ -1060,8 +1253,7 @@ border-bottom: none;
 
 
 @media all and (min-width:601px) {
-  .logo_img img:nth-child(1) {display: none;}
-  .logo_img img:nth-child(2) {display: block;}
+
   .item_banner_mobile1 {display: none;}
   .item_banner_mobile1 {display: none;}
   .max_plant_logo,
@@ -1074,17 +1266,19 @@ border-bottom: none;
   .news_text li:nth-child(8) {display: block;}
   .CF_box3, .CF_box4{display: block;}
 
+  .logo {
+    width: 210px;
+  }
 
-  .logo {width: 200px; padding-top: 15px;}
+
 
   .item_more,
   .more_bttn {
     top: 15px;
     right: 30px;
-    border: 1px solid #aaa;
   }
   .news_more {
-    top: 5px;
+    top: 12px;
     right: 15px;
   }
   .title p {font-size: 32px;}
@@ -1104,11 +1298,6 @@ border-bottom: none;
   .CF_title p {
     width: 140px;
     height: 60px;
-  }
-  .CF_banner,
-  .visual_main,
-  .new_product_item_mobile {
-    margin-bottom: 100px;
   }
   .news_banner,
   .contribute_banner {
@@ -1169,10 +1358,7 @@ border-bottom: none;
   .visual_main {
     height: 465px;
   }
-  .gnb {
-    width: 180px;
-    top: 0;
-  }
+
   .new_product_silck .slick-next::after,
   .new_product_silck .slick-prev::after {
     top: 240px;
@@ -1188,12 +1374,12 @@ border-bottom: none;
     margin-top: 100px;
     font-size: 16px;
     font-weight: bold;
-    color: red;
+    color: #FD8A8A;
   }
   .slick-center {margin-top: 150px;}
   .max_plant_banner {
     height: 550px;
-    margin: 60px 0 100px;
+    margin: 60px 0 15px;
   }
   .max_plant_img {
     width: 70%;
@@ -1251,6 +1437,9 @@ border-bottom: none;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 5px;
   }
+  .CF_banner {
+    padding-bottom: 50px;
+  }
   .CF_box1 iframe,
   .CF_box2 iframe {
     height: 228px;
@@ -1280,6 +1469,20 @@ border-bottom: none;
     width: 49%;
     height: 285px;
   }
+  .contribute_title,
+  .history_title,
+  .magazine_title,
+  .food_safety_title {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.275);
+    text-align: center;
+    color: #fff;
+    line-height: 35px;
+  }
 
   .contribute_box_tab img {
     width: 100%;
@@ -1287,7 +1490,7 @@ border-bottom: none;
     display: block;
   }
   .contribute_title {
-    line-height: 35px;
+    top: 15px;
   }
   .history_banner,
   .magazine_banner {
@@ -1297,7 +1500,7 @@ border-bottom: none;
   .history_banner {
     margin-right: 2%;
   }
-  .footer {
+  .footer_box {
     display: flex;
     flex-wrap: wrap;
   }
@@ -1339,14 +1542,17 @@ border-bottom: none;
     margin-left: 4%;
   }
 
-
   .site_box {
     width: 100%;
     height: 190px;
-    font-size: 18px;
+    font-size: 14px;
     left: 7px;
     bottom: 0;
-    background-color: #222;
+    background-color: #eee;
+  }
+  .site_box a {
+    font-size: 14px;
+    color: #222;
   }
   .site_box li:last-child, .site_box li:last-child {
     right: 15px;
@@ -1479,23 +1685,15 @@ border-bottom: none;
     display: block;
   }
   .CF_box3, .CF_box4{display: block;}
-  .gnb_mobile{ display: none;}
-  .gnb_PC {display: block;}
   .btn_mogile {display: none;}
   .btn_PC {display: block;}
 
 
-  .logo {
-    width: 300px;
-    height: 200px;
-  }
-  .logo_img {
-    width: 300px;
-    height: 200px;
-  }
+
   .header {
-    height: 265px;
+    height: 190px;
   }
+
   .nav_PC a {
     font-size: 18px;
     font-weight: bold;
@@ -1523,6 +1721,7 @@ border-bottom: none;
     height: 50px;
     line-height: 55px;
     text-align: center;
+    transition: 0.3s;
   }
 
 
@@ -1547,7 +1746,7 @@ border-bottom: none;
     padding: 15px 0;
     box-sizing: border-box;
     background-color: #fff;
-    visibility: hidden;
+    visibility: hidden;             /* 히든! */
   }
   .menu_sht a {
   font-size: 16px;
@@ -1563,7 +1762,7 @@ border-bottom: none;
     visibility: visible;
   }
   .menu_sht ul li:hover a {
-    border-bottom: 2px solid red;
+    border-bottom: 3px solid #F55050;
   }
 
 /*   @keyframes full_dows {
@@ -1653,7 +1852,7 @@ border-bottom: none;
   .menu_sht_eve_box {
     width: 207px;
     height: 270px;
-    margin: 0 auto;
+    margin-left: 95px;
   }
   .menu_sht_eve_box img {
     width: 100%;
@@ -1669,6 +1868,10 @@ border-bottom: none;
     height: 720px;
     margin: 0 auto;
   }
+  .new_product_item_mobile {
+    padding-top: 100px;
+    box-sizing: border-box;
+  }
   .new_product_item_mobile_box {
     width: 1274px;
     height: 1000px;
@@ -1680,14 +1883,7 @@ border-bottom: none;
   .slick-list {
     height: 800px;
   }
-  .gnb {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  .logo {
-    width: 1274px;
-  }
+
   .new_product_silck .slick-prev::after,
   .new_product_silck .slick-next::after {
     top: 340px;
@@ -1716,6 +1912,7 @@ border-bottom: none;
     overflow: hidden;
     font-size: 14px;
     font-weight: bold;
+    transition: 0.3s;
   }
   .item_item:hover .item_hover,
   .item_item2:hover .item_hover {
@@ -1782,9 +1979,13 @@ border-bottom: none;
   }
   .item_hover h2:hover {
     line-height: 40px;
-    border: 2px solid red;
+    border: 3px solid #F55050;
+    background-color: #F55050;
     border-radius: 5px;
     box-sizing: border-box;
+  }
+  .item_hover h2:hover a {
+    color: #fff;
   }
   .item_hover h2 a {
     display: block;
@@ -1797,7 +1998,8 @@ border-bottom: none;
     font-size: 14px;
   }
   .max_plant_banner {
-    height: 660px;
+    height: 755px;
+    margin-bottom: 20px;
   }
   .max_plant_banner_box {
     width: 1274px;
@@ -1831,10 +2033,13 @@ border-bottom: none;
 
 
 
-
+  .CF_banner {
+    padding-bottom: 100px;
+  }
   .CF_banner_box {
     width: 1274px;
     margin: 0 auto;
+    padding-bottom: 100px;
   }
   .CF_box3,
   .CF_box4 {
@@ -1895,9 +2100,248 @@ border-bottom: none;
   }
 
 
+  .top_box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 30px;
+  }
+  .gnb {
+    height: 30px;
+    font-size: 12px
+  }
+  .gnb_top {
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+  .gnb_box {
+    position: relative;
+    width: 1274px;
+    height: 30px;
+    margin: 0 auto;
+    top: 0;
+  }
+  .title p {
+    width: 250px;
+    font-size: 36px;
+  }
+  .item_box_title p {
+    width: 280px;
+    height: 60px;
+    padding: 0;
+  }
+  .max_plant_title p {
+    width: 320px;
+  }
+
+  .item_box_title h3,
+  .max_plant_title h3,
+  .CF_title h3,
+  .new_product_title_mobile h5 {
+    width: 280px;
+    font-size: 16px;
+  }
+  .tit p {
+    width: 100px;
+    margin: 0;
+  }
+
+  .pc_menu ul li:hover {
+    background-color: #F55050;
+    border-radius: 5px;
+  }
+  .pc_menu ul li:hover a {
+    color: #fff;
+  }
+  .pc_menu ul li .menu_sheet1 li a,
+  .pc_menu ul li .menu_sheet2 li a,
+  .pc_menu ul li .menu_sheet3 li a,
+  .pc_menu ul li .menu_sheet4 li a,
+  .pc_menu ul li .menu_sheet5 li a {
+    color: #000;
+  }
+  .pc_menu ul li .menu_sheet1 li,
+  .pc_menu ul li .menu_sheet2 li,
+  .pc_menu ul li .menu_sheet3 li,
+  .pc_menu ul li .menu_sheet4 li,
+  .pc_menu ul li .menu_sheet5 li {
+    background-color: #fff;
+  }
+  .more_bttn a{
+    display: block;
+  }
+  .footer{
+    width: 1274px;
+    margin: 0 auto;
+  }
   /* FOOTER CHECK박스 영역 백그라운드 빼기 */
-  
   /* TITLE 글자 크기 수정해야함. */
   /* 전체적인 색상 넣거나 수정해야함 */
   /* 예를 들어 타이틀 백그라운드 #eee */
+
+
+
+
+
+/* brand_product_banner */
+  .brand_product_banner{
+    width: 100%;
+    height: 650px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    float: left;
+  }
+  .brand_product_box {
+    width: 100%; /* 8칼럼+7여백 */
+    height: 400px;
+    margin: 0 auto;
+  }
+  .brand_label_box label {
+    height: 30px;
+    font-family: 'Black Han Sans';
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .brand_label_box .brand_label1 {
+    margin-left: 30px;
+  }
+  .brd_sht {
+    display: none;
+  }
+  .brd_sht img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .brand_product_box input {
+    display: none;
+  }
+
+
+  #brand_chk1:checked ~ .brand_sheet1 {
+    display: block;
+    background: url(./back_img/brand_back1.jpg) no-repeat;
+  }
+  #brand_chk2:checked ~ .brand_sheet2 {
+    display: block;
+    background: url(./back_img/brand_back2.jpg) no-repeat;
+  }
+  #brand_chk3:checked ~ .brand_sheet3 {
+    display: block;
+    background: url(./back_img/brand_back3.jpg) no-repeat;
+  }
+  #brand_chk4:checked ~ .brand_sheet4 {
+    display: block;
+    background: url(./back_img/brand_back4.jpg) no-repeat;
+  }
+  #brand_chk5:checked ~ .brand_sheet5 {
+    display: block;
+    background: url(./back_img/brand_back5.jpg) no-repeat;
+  }
+  #brand_chk6:checked ~ .brand_sheet6 {
+    display: block;
+    background: url(./back_img/brand_back6.jpg) no-repeat;
+  }
+  #brand_chk7:checked ~ .brand_sheet7 {
+    display: block;
+    background: url(./back_img/brand_back7.jpg) no-repeat;
+  }
+  #brand_chk8:checked ~ .brand_sheet8 {
+    display: block;
+    background: url(./back_img/brand_back8.jpg) no-repeat;
+  }
+  #brand_chk9:checked ~ .brand_sheet9 {
+    display: block;
+    background: url(./back_img/brand_back9.jpg) no-repeat;
+  }
+  #brand_chk10:checked ~ .brand_sheet10 {
+    display: block;
+    background: url(./back_img/brand_back10.jpg) no-repeat;
+  }
+  #brand_chk11:checked ~ .brand_sheet11 {
+    display: block;
+    background: url(./back_img/brand_back11.jpg) no-repeat;
+  }
+  #brand_chk12:checked ~ .brand_sheet12 {
+    display: block;
+    background: url(./back_img/brand_back12.jpg) no-repeat;
+  }
+  .brd_sht {
+    width: 100%;
+    height: 450px
+  }
+  .brand_logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .brand_logo {
+    width: 300px;
+    height: 310px;
+    margin: 0 auto;
+  }
+  .brand_starbucks_logo img,
+  .brand_top_logo img,
+  .brand_maxWell_logo img,
+  .brand_post_logo img {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  .brand_oreo_logo img {
+    padding-top: 20px;
+  }
+  .brand_label_box {
+    width: 846px;
+    height: 50px;
+    line-height: 35px;
+    margin: 0 auto;
+  }
+  .brand_label_box label {
+    padding: 5px 10px;
+  }
+  .brand_label_box label:hover {
+    color: #fff;
+    background-color: #F55050;
+    border-radius: 5px;
+  }
+  .brand_box2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .brand_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .brand_img {
+    position: relative;
+    width: 194px;
+    height: 305px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    float: left;
+  }
+  .brand_txt {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
 }
