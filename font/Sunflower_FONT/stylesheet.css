@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Sunflower';
+    src: url('Sunflower-Light.eot');
+    src: url('Sunflower-Light.eot?#iefix') format('embedded-opentype'),
+        url('Sunflower-Light.woff2') format('woff2'),
+        url('Sunflower-Light.woff') format('woff'),
+        url('Sunflower-Light.ttf') format('truetype'),
+        url('Sunflower-Light.svg#Sunflower-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sunflower';
+    src: url('Sunflower-Bold.eot');
+    src: url('Sunflower-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Sunflower-Bold.woff2') format('woff2'),
+        url('Sunflower-Bold.woff') format('woff'),
+        url('Sunflower-Bold.ttf') format('truetype'),
+        url('Sunflower-Bold.svg#Sunflower-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sunflower';
+    src: url('Sunflower-Medium.eot');
+    src: url('Sunflower-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Sunflower-Medium.woff2') format('woff2'),
+        url('Sunflower-Medium.woff') format('woff'),
+        url('Sunflower-Medium.ttf') format('truetype'),
+        url('Sunflower-Medium.svg#Sunflower-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

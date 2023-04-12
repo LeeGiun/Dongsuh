@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Black Han Sans';
+    src: url('BlackHanSans-Regular.eot');
+    src: url('BlackHanSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BlackHanSans-Regular.woff2') format('woff2'),
+        url('BlackHanSans-Regular.woff') format('woff'),
+        url('BlackHanSans-Regular.ttf') format('truetype'),
+        url('BlackHanSans-Regular.svg#BlackHanSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

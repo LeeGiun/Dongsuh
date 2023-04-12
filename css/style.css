@@ -778,10 +778,13 @@ body, html {width: 100%;}
 /* brand_product_banner */
 .brand_product_banner{
   width: 100%;
-  height: 650px;
+  height: 800px;
   margin-bottom: 100px;
   margin-top: 100px;
   float: left;
+}
+.brand_product_banner p {
+  color: #eee;
 }
 .brand_product_box {
   width: 100%; /* 8칼럼+7여백 */
@@ -867,7 +870,8 @@ body, html {width: 100%;}
 }
 .brd_sht {
   width: 100%;
-  height: 450px
+  height: 800px;
+  font-weight: bold;
 }
 .brand_logo img {
   width: 100%;
@@ -877,7 +881,7 @@ body, html {width: 100%;}
 }
 .brand_logo {
   width: 300px;
-  height: 310px;
+  height: 200px;
   margin: 0 auto;
 }
 .brand_starbucks_logo img,
@@ -897,7 +901,7 @@ body, html {width: 100%;}
   line-height: 35px;
   margin: 0 auto;
   padding-top: 15px;
-  background-color: #FD8A8A;
+  background-color: rgba(255, 84, 84, 0.428);
   color: #fff;
 }
 .brand_label_box label {
@@ -923,7 +927,7 @@ body, html {width: 100%;}
 .brand_img {
   position: relative;
   width: 194px;
-  height: 305px;
+  height: 270px;
   padding-top: 20px;
   box-sizing: border-box;
   float: left;
