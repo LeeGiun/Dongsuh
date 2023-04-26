@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/TEST.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="./font/Noto_Sans_KR_FONT/stylesheet.css">
+  <link rel="stylesheet" href="./font/Anton_FONT/stylesheet.css">
+  <link rel="stylesheet" href="./font/Sunflower_FONT/stylesheet.css">
+  <link rel="stylesheet" href="./font/Black_Han_Sans_FONT/stylesheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./font/Oswald_Font/stylesheet.css">
+  <title>DongSuh_Food</title>
+</head>
+<body>
+  
+
+  
+
+  <div class="max_plant_banner">
+    <div class="max_plant_banner_box">
+      <div class="max_plant_title title">
+        <p>MAXIM PLANT </p>
+        <h3>도심의 맥심속으로 <i class="far fa-building"></i> ~ </h3>
+      </div>
+      <div class="max_plant_box">
+        <div class="max_plant_img">
+          <div class="max_plant_text">
+            <h4>
+            <a href="./TEST.html">알아보기<i class="fas fa-angle-right next"></i>
+            </a></h4>
+            <h3>
+              &nbsp;&nbsp; 맥심 플랜트는 좋은 커피를 향한 오랜 철학과 전문성을
+‘커피나무 (Coffee Plant)’ , ‘공장 (Production Plant)’  그리고 ‘문화를 심는 공간 (Culture Plant)’
+세 가지 주제로 구현한 맥심 브랜드 플래그쉽 스토어입니다.
+            </h3>
+            <h5>
+              맥심 브랜드 플래그쉽 스토어
+            </h5>
+          </div>
+        </div> <!-- // .max_plant_img END -->
+
+      </div> <!-- // .max_plant_box END -->
+    </div>
+  </div> <!-- // .max_plant_banner END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js">
+</script>
+<script>
+  $(document).ready(function(){
+  $('.new_product_silck').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    centerMode : true,
+    centerPadding : '0px',
+    autoplay: false,
+    autoplaySpeed: 5000,
+  });
+  });
+</script>
+<script>
+  $(function() {
+    const newText = $('.news_text li');
+
+    newText.mouseover(function() {
+      $(this).css('scale', '1.03')
+      $(this).css('fontWeight', 'bold')
+    }).mouseout(function(){
+      $(this).css('scale', '1')
+      $(this).css('fontWeight', 'unset')
+    })
+
+    $('.btn_box img').mouseover(function() {
+      $(this).css('scale', '1.02')
+    }).mouseout(function() {
+      $(this).css('scale', '1')
+    })
+
+    $(window).scroll(function(){
+      if ($(window).scrollTop() >= 140) {
+        $('.nav_PC').addClass('menu_fix')
+      } else {
+        $('.nav_PC').removeClass('menu_fix')
+      }
+    })
+
+
+
+})
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+</script>
+
+
+</body>
+</html>
