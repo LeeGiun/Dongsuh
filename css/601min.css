@@ -46,23 +46,28 @@
   .bottom_banner .tit {
     margin-top: 22px;
   }
+
+
+
+  .ham_logo {
+    margin: 8px auto 50px;
+  }
   .ham_menu_sheet {
     height: 100vh;
+  }
+  .ham_menu {
+    height: 80px;
+  }
+  .ham_menu span {
+    height: 80px;
+    line-height: 80px;
   }
   .ham_box_box {
     margin-top: 500px;
   }
   .ham_bar {
     display: block;
-    position: absolute;
-    left: 50%;
-    top: 68%;
-    transform: translate(-50%, -50%);
-    width: 5px;
-    height: 250px;
     border-left: 1px solid #eee;
-  }
-  .ham_foot {
   }
   .ham_sns {
     border: none;
@@ -82,13 +87,18 @@
     bottom: 0;
     height: 120px;
   }
-
-
+  .ham_5 span {
+    height: 110px;
+  }
+  .ham_5  {
+    height: 110px;
+    margin-bottom: 30px;
+  }
 
 
   .la_hm {
     font-size: 30px;
-    top: 30px;
+    top: 66px;
     left: 15px;
     margin-left: 10px;
   }
