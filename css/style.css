@@ -20,7 +20,6 @@ body, html {
   font-family: 'Noto Sans KR', sans-serif;
 
 }
-.nav_PC {display: none;}
 .item_banner_tab1 {display: none;}
 .contribute_box_tab {display: none;}
 .news_text li:nth-child(8) {display: none;}
@@ -52,6 +51,9 @@ body, html {
   text-align: center;
   margin: 20px 0;
   font-family: 'NotoSansKR';
+}
+.new_product_title_mobile {
+  margin-bottom: -65px;
 }
 .new_product_title_mobile p {
   width: 300px;
@@ -225,28 +227,41 @@ body, html {
 /* logo */
 .logo {
   position: relative;
+  width: 70%;
   z-index: 22;
-  width: 55%;
   height: 115px;
+  margin-right: 30%;
   margin: 0 auto;
 }
+.logo_subBox {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 180px;
+  height: 100px;
+}
 .logo_box {
-  width: 160px;
-  height: 115px;
+  position: relative;
   text-align: center;
-  line-height: 115px;
   font-family: 'Sunflower';
-  font-size: 20px;
-  padding-left: 10px;
   box-sizing: border-box;
   color: #F55050;
   float: left;
+  letter-spacing: -2px;
+}
+.logo_box h1 {
+  width: 100%;
+  height: 115px;
+  line-height: 115px;
+  font-size: 38px;
 }
 .logo_box_img {
   width: 50px;
   height: 115px;
   float: left;
-  padding-top: 32.5px;
+  padding-left: 5px;
+  padding-top: 35px;
   box-sizing: border-box;
 }
 .logo_box_img img {
@@ -302,10 +317,12 @@ body, html {
   display: block;
 }
 .la_hm {
+  position: absolute;
+  top: 55px;
+  left: 20px;
   text-align: left;
   font-size: 28px;
-  margin-left: 15px;
-  margin-top: 60px;
+  
 }
 .ham_menu_sheet {
   position: fixed;
@@ -313,7 +330,7 @@ body, html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 845px;
+  height: 100vh;
   background-color: rgba(255, 255, 255, 0.99);
   box-sizing: border-box;
 }
@@ -327,13 +344,13 @@ body, html {
 }
 .ham_menu span {
   width: 50%;
-  padding-left: 30px;
+  padding-left: 15px;
   box-sizing: border-box;
   float: left;
 }
 .span_2 {
   text-align: right;
-  padding-right: 30px;
+  padding-right: 15px;
   box-sizing: border-box;
 }
 
@@ -351,28 +368,37 @@ body, html {
   padding-right: 15px;
   box-sizing: border-box;
 }
-
-.ham_foot {
+.ham_bar {
+  display: block;
   position: absolute;
-  left: 3%;
-  bottom: 20%;
-  width: 57%;
+  left: 50%;
+  top: 68%;
+  transform: translate(-50%, -50%);
+  width: 2%;
+  height: 200px;
+  border-left: 1px solid #eee;
+}
+.ham_foot {
+  width: 48%;
   height: 140px;
-  margin-top: 20px;
+  margin-top: 80px;
+  padding-left: 15px;
+  letter-spacing: -0.5px;
+  box-sizing: border-box;
+  float: left;
 }
 
 .ham_sns {
-  position: absolute;
-  right: 0;
-  bottom: 20%;
-  width: 40%;
-  height: 140px;
+  width: 48%;
+  height: 180px;
   float: right;
   line-height: 20px;
-  border-left: 1px solid #ccc;
-  padding-left: 4%;
+  margin-top: 70px;
   box-sizing: border-box;
+  /* border-left: 1px solid #ccc; */
 }
+
+
 .ham_sns h3 {
   width: 100%;
   height: 40px;
@@ -382,10 +408,11 @@ body, html {
   box-sizing: border-box;
 }
 .ham_sns_total {
-  width: 25%;
-  float: left;
+  width: 50px;
+  height: 50px;
   padding: 2%;
   padding-bottom: 15px;
+  float: left;
 }
 .ham_sns_total img {
   width: 100%;
@@ -393,12 +420,12 @@ body, html {
   display: block;
 } 
 .ham_foot li {
-  font-size: 12px;
+  font-size: 10px;
   line-height: 25px;
 }
 .ham_foot li:nth-child(1),
 .ham_foot li:nth-child(2) {
-  font-size: 16px;
+  font-size: 14px;
   }
 .ham_foot li:nth-child(2) {
   margin-bottom: 15px;
@@ -410,10 +437,10 @@ body, html {
 }
 
 .ham_box_box {
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 50px;
-  float: left;
-  margin-top: 310px;
+  height: 100px;
   border-top: 1px solid #ccc;
 }
 .ham_box_box p {
@@ -428,11 +455,13 @@ body, html {
 
 
 
-
 /* visual_main */
 .visual_main {
   width: 100%;
   float: left;
+}
+.visual_main_box {
+  position: relative;
 }
 .visual_main_box video {
   width: 100%;
@@ -445,7 +474,91 @@ body, html {
 .visual_main video {
   scale: 1.36;
 }
+.visual_text {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.visual_text a {
+  color: #bbb;
+  display: block;
+}
+.visual_text:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  animation-name: updown;
+  animation-duration: 1.3s;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+}
+.visual_text:hover a {
+  color: #000;
+  font-weight: bold;
+}
 
+@keyframes updown {
+
+  0% {bottom: 5px; scale: 1;}
+  50% {bottom: 10px; opacity: 0.8; scale: 1.1;}
+  100% {bottom: 5px; scale: 1;}
+/* 
+  0% {right: 5px;
+    bottom: 5px;}
+  5% {right: 5.8px;
+    bottom: 4.3px;}
+  9% {right: 6.5px;
+    bottom: 3.5px;}
+  14% {right: 7.3px;
+    bottom: 2.8px;}
+  18% {right: 8px;
+    bottom: 2px;}
+  23% {right: 8.8px;
+    bottom: 1.3px;}
+  27% {right: 9.5px;
+    bottom: 0.5px;}
+  31% {right: 10.3px;
+      bottom: 1.3px;}
+  36% {right: 11px;
+    bottom: 2px;}
+  40% {right: 11.8px;
+      bottom: 2.8px;}
+  45% {right: 12.5px;
+    bottom: 3.5px;}
+  49% {right: 13.2px;
+    bottom: 4.3px;}
+  54% {right: 14px;
+    bottom: 5px;}
+  58% {right: 13.3px;
+    bottom: 5.8px;}
+  63% {right: 12.5px;
+    bottom: 6.5px;}
+  67% {right: 13.3px;
+    bottom: 7.3px;}
+  72% {right: 11px;
+    bottom: 8px;}
+  76% {right: 11.8px;
+    bottom: 8.8px;}
+  81% {right: 9.5px;
+    bottom: 9.5px;}
+  85% {right: 8.8px;
+    bottom: 8.8px;}
+  90% {right: 8px;
+    bottom: 8px;}
+  93% {right: 7px;
+    bottom: 7px;}
+  96% {right: 6px;
+    bottom: 6px;}
+  100% {right: 5px;
+    bottom: 5px;}
+ */
+}
 
 
 
@@ -463,7 +576,7 @@ body, html {
 .new_product_silck {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 350px;
   overflow: hidden;
 }
 
@@ -486,37 +599,34 @@ body, html {
   text-align: center;
   font-size: 0;
 }
-.sck span {
-}
 .sub_text {
   display: none;
 }
 .slick-center {
   position: relative;
-  margin-top: 130px;
+  margin-top: 70px;
   transition: 0.3s 0.5s;
-  scale: 1;
+  scale: 1.5;
 }
 .slick-center p {
   width: 100%;
-  display: block;
-  font-size: 10px;
+  font-size: 8px;
   font-weight: bold;
   color: #000;
   scale: 1;
+  margin-top: -5px;
+  margin-bottom: -8px;
 }
 .slick-center .sub_text {
   display: inline-block;
-  width: 100%;
-  font-size: 10px;
+  width: 120%;
+  font-size: 8px;
   scale: 1;
   line-height: 15px;
   letter-spacing: -1px;
   color: #888;
   text-align: center;
-}
-.sub_text {
-  text-align: center;
+  margin-left: -11%;
 }
 
 
@@ -532,7 +642,7 @@ body, html {
   visibility: hidden;
 }
 .new_product_silck .slick-prev::after {
-  width: 45px;
+/*   width: 45px;
   height: 45px;
   position: absolute;
   z-index: 11;
@@ -543,10 +653,10 @@ body, html {
   font-weight: 900;
   font-size: 40px;
   visibility: visible;
-  color: #bbb;
+  color: #bbb; */
 }
 .new_product_silck .slick-next::after {
-  width: 45px;
+/*   width: 45px;
   height: 45px;
   position: absolute;
   z-index: 11;
@@ -557,7 +667,7 @@ body, html {
   font-weight: 900;
   font-size: 40px;
   visibility: visible;
-  color: #bbb;
+  color: #bbb; */
 }
 
 
@@ -747,7 +857,7 @@ body, html {
 }
 .max_plant_box {
   width: 100%;
-  height: 250px;
+  height: 400px;
   margin: 0 auto;
 }
 .max_plant_box .max_plant_img {
@@ -756,6 +866,7 @@ body, html {
   height: 100%;
   animation-name: maxPlant;
   animation-duration: 12s;
+  animation-delay: 0.5s;
   animation-iteration-count: infinite;
   overflow: hidden;
 }
@@ -906,15 +1017,6 @@ body, html {
   display: block;
   background: url(./back_img/brand_back1_mobile.jpg) no-repeat;
   background-size: cover;
-  animation-name: sht1;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-@keyframes sht1 {
-  0% { 
-    opacity: 0.8;}
-  100% {
-    opacity: 1;}
 }
 #brand_chk2:checked ~ .brand_sheet2 {
   display: block;
@@ -1024,8 +1126,10 @@ body, html {
   font-size: 12px;
 }
 .brand_box2 {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
 }
 .brand_img img {
@@ -1035,12 +1139,14 @@ body, html {
 }
 .brand_img {
   position: relative;
-  width: 194px;
-  height: 270px;
+  width: 110px;
+  height: 240px;
   padding-top: 20px;
   box-sizing: border-box;
+  margin: 0 10px;
   float: left;
 }
+
 .brand_txt {
   position: absolute;
   bottom: 0;
@@ -1349,24 +1455,6 @@ border-bottom: none;
 
 .foot_text_box ul li {
   padding: 5px 0;
-}
-
-
-
-.div1 {
-  width: 100%;
-}
-
-.div11 {
-  width: 390px; 
-  height: 200px;
-  margin: 0 auto;
-}
-
-.div11 img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 

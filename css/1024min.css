@@ -44,7 +44,7 @@
     display: flex;
     justify-content: space-around;
     width: 25%;
-    /* width: 254.8px; */
+    width: 254.8px;
     height: 50px;
     line-height: 55px;
     text-align: center;
@@ -73,7 +73,8 @@
     padding: 15px 0;
     box-sizing: border-box;
     background-color: #fff;
-    visibility: hidden;             /* 히든! */
+    visibility: hidden;
+    /* 히든! */
   }
   .menu_sht a {
   font-size: 16px;
@@ -189,6 +190,7 @@
   .visual_main {
     width: 100%;
     height: 805px;
+    float: left;
   }
   .visual_main_box {
     width: 1274px;
@@ -208,7 +210,7 @@
   }
   .new_product_item_mobile_box {
     width: 970px;
-    height: 500px;
+    height: 700px;
     margin: 0 auto;
   }
   .new_product_silck {
@@ -224,11 +226,12 @@
     color: #777;
   }
   .slick-center {
-    margin-top: 30px;
-    scale: 1.8;
+    margin-top: 20px;
+    scale: 1.5;
   }
   .sck p {
     color: #444;
+    margin-bottom: 10px;
   }
   .slick-list {
     height: 500px;
@@ -255,7 +258,7 @@
     width: 100%;
   }
   .sheet_tap {
-    width: 1274px;
+    width: 1000px;
     height: 280px;
     margin: 0 auto;
   }
@@ -363,7 +366,7 @@
     padding-bottom: 100px;
   }
   .CF_banner_box {
-    width: 1274px;
+    width: 1000px;
     margin: 0 auto;
     padding-bottom: 100px;
   }
@@ -379,12 +382,7 @@
   .CF_box iframe{
     height: 355px;
   }
-  .news_banner,
-  .btn_banner {
-    width: 629.5px;
-    height: 330px;
-    margin-right: 15px;
-  }
+
   .contribute_banner {
     margin-right: 0;
   }
@@ -392,7 +390,7 @@
     width: 100%;
   }
   .bottom_banner_box1 {
-    width: 1274px;
+    width: 1000px;
     height: 500px;
     margin: 0 auto;
   }
@@ -402,7 +400,7 @@
     float: left;
   }
   .news_text {
-    width: 369.5px;
+    width: 45%;
   }
   .history_banner,
   .magazine_banner,
@@ -495,7 +493,7 @@
     display: block;
   }
   .footer{
-    width: 1274px;
+    width: 100%;
     margin: 0 auto;
   }
   /* FOOTER CHECK박스 영역 백그라운드 빼기 */
@@ -520,6 +518,7 @@
   .community_site {
     left: 433px;
   }
+  
   .tit {
     z-index: 99;
   }
@@ -593,8 +592,9 @@
     background: url(./back_img/brand_back12.jpg) no-repeat center;
   }
   .brd_sht {
-    width: 100%;
+    width: 1000px;
     height: 700px;
+    margin: 0 auto;
   }
   .brand_logo {
     height: 310px;
@@ -621,6 +621,7 @@
     position: relative;
   }
   .header {
+    width: 100%;
     height: 195px;
     position: absolute;
     top: 0;
@@ -690,11 +691,20 @@
   .max_plant_text h4 {
     letter-spacing: 1px;
   }
-
   .max_plant_text .next{
     margin-left: 20px;
+  }
+  .news_banner,
+  .btn_box {
+    height: 330px;
+  }
+  .contribute_box_tab {
+    height: 330px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 }
-}
+
 
 @media all and (min-width:1274px) {
   .max_plant_box {
@@ -703,5 +713,46 @@
   .max_plant_text h3{
     padding-top: 35px;
     width: 71%;
+  }
+  .CF_banner_box {
+    width: 1274px;
+  }
+  .sheet_tap {
+    width: 1274px;
+  }
+  .bottom_banner_box1 {
+    width: 1274px;
+  }
+  .footer{
+    width: 1274px;
+  }
+  .header {
+    width: 100%;
+  }
+  .nav_PC {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+  }
+  .brd_sht {
+    width: 1274px;
+  }
+
+  .menu_fix {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+  .news_text {
+    width: 369.5px;
+  }
+  .news_banner,
+  .contribute_box_tab {
+    width: 629.5px;
+    height: 300px;
+    margin-right: 15px;
+    float: left;
   }
 }

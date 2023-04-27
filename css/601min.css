@@ -25,6 +25,9 @@
   }
   .title p {font-size: 32px;}
   .tltle h3 {font-size: 14px;}
+  .new_product_title_mobile {
+    margin-bottom: -120px;
+  }
   .new_product_title_mobile p {
     width: 220px;
     height: 60px;
@@ -43,51 +46,51 @@
   .bottom_banner .tit {
     margin-top: 22px;
   }
-
-  .ham_logo {
-    width: 100px;
-    height: 100px;
-  }
-  .ham_X {
-    font-size: 50px;
-    padding-right: 20px;
-    margin-top: 10px;
-    top: 0;
-  }
-
   .ham_menu_sheet {
-    width: 100%;
-    height: 1185px;
+    height: 100vh;
   }
-  .ham_menu {
-    height: 120px;
-    line-height: 120px;
+  .ham_box_box {
+    margin-top: 500px;
   }
-  .ham_menu span {
-    font-size: 26px;
-  }
-  .ham_1 {
-    padding-top: 20px;
-  }
-  .span_bttn {
-    padding-bottom: 10px;
-  }
-  .la_hm {
-    font-size: 60px;
-    margin-top: 30px;
-    margin-left: 30px;
+  .ham_bar {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 68%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 250px;
+    border-left: 1px solid #eee;
   }
   .ham_foot {
-    height: 180px;
-    bottom: 14%;
-  }
-  .ham_foot li {
-    font-size: 16px;
-    line-height: 30px;
   }
   .ham_sns {
-    height: 220px;
-    bottom: 13%;
+    border: none;
+    padding: 0;
+    height: 295px;
+  }
+  .ham_foot li:nth-child(1),
+  .ham_foot li:nth-child(2) {
+    font-size: 22px;
+  }
+  .ham_foot li {
+    line-height: 40px;
+  }
+  .ham_box_box {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+  }
+
+
+
+
+  .la_hm {
+    font-size: 30px;
+    top: 30px;
+    left: 15px;
+    margin-left: 10px;
   }
   .new_product_silck .slick-next::after,
   .new_product_silck .slick-prev::after {
@@ -96,7 +99,7 @@
   .new_product_silck {
     width: 98%;
     margin: 0 auto;
-    height: 550px;
+    height: 490px;
   }
   .new_product_silck .slick-arrow {
     font-size: 0;
@@ -172,6 +175,9 @@
     text-align: center;
     color: #fff;
     line-height: 35px;
+  }
+  .contribute_box_tab {
+    margin-top: 50px;
   }
 
   .contribute_box_tab img {
@@ -381,7 +387,7 @@
 
 
 .brand_product_banner{
-  height: 800px;
+  height: 900px;
 }
 .brand_label1 {
   margin-left: 5%;
@@ -391,53 +397,65 @@
 #brand_chk1:checked ~ .brand_sheet1 {
   display: block;
   background: url(./back_img/brand_back1_tab.jpg) no-repeat;
+  background-size: cover;
 }
 #brand_chk2:checked ~ .brand_sheet2 {
   display: block;
   background: url(./back_img/brand_back2_tab.jpg) no-repeat;
+  background-size: cover;
 }
 #brand_chk3:checked ~ .brand_sheet3 {
   display: block;
   background: url(./back_img/brand_back3_tab.jpg) no-repeat;
+  background-size: cover;
 }
 #brand_chk4:checked ~ .brand_sheet4 {
   display: block;
   background: url(./back_img/brand_back4_tab.jpg) no-repeat;
+  background-size: cover;
 }
 #brand_chk5:checked ~ .brand_sheet5 {
   display: block;
   background: url(./back_img/brand_back5_tab.jpg) no-repeat;
+  background-size: cover;
 }
 #brand_chk6:checked ~ .brand_sheet6 {
   display: block;
   background: url(./back_img/brand_back6_tab.jpg) no-repeat;
+  background-size: cover;
 }
 #brand_chk7:checked ~ .brand_sheet7 {
   display: block;
   background: url(./back_img/brand_back7_tab.jpg) no-repeat;
+  background-size: cover;
 }
 #brand_chk8:checked ~ .brand_sheet8 {
   display: block;
   background: url(./back_img/brand_back8_tab.jpg) no-repeat;
+  background-size: cover;
 }
 #brand_chk9:checked ~ .brand_sheet9 {
   display: block;
   background: url(./back_img/brand_back9_tab.jpg) no-repeat;
+  background-size: cover;
 }
 #brand_chk10:checked ~ .brand_sheet10 {
   display: block;
   background: url(./back_img/brand_back10_tab.jpg) no-repeat;
+  background-size: cover;
 }
 #brand_chk11:checked ~ .brand_sheet11 {
   display: block;
   background: url(./back_img/brand_back11_tab.jpg) no-repeat;
+  background-size: cover;
 }
 #brand_chk12:checked ~ .brand_sheet12 {
   display: block;
   background: url(./back_img/brand_back12_tab.jpg) no-repeat;
+  background-size: cover;
 }
 .brd_sht {
-  height: 800px;
+  height: 900px;
 }
 .brand_logo {
   height: 350px;
@@ -484,6 +502,17 @@
   font-size: 18px;
   box-sizing: border-box;
 }
+.brand_box2 {
+  height: 450px;
+}
 
+
+}
+
+
+@media all and (min-width:768px) {
+  .new_product_silck {
+    height: 600px;
+  }
 }
 
