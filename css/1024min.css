@@ -1,4 +1,5 @@
 @media all and (min-width:1024px) {
+  .lnb {display: block;}
   .news_text li:nth-child(8) {display: block;}
   .news_text li:nth-child(9) {display: block;}
   .nav_mobile {
@@ -11,181 +12,32 @@
   .btn_mogile {display: none;}
   .btn_PC {display: block;}
 
-
-
-
-
-  .nav_PC a {
-    font-size: 18px;
-    color: #fff;
-    font-size: 17px;
-  }
-  .nav_PC {
-    display: block;
-    width: 100%;
-    height: 50px;
-    margin: 0 auto;
+  .wrap {
     position: relative;
-    z-index: 11;
-    color: #fff;
-    float: left;
   }
-  .pc_menu {
-    position: relative;
+  .header {
     width: 100%;
-    height: 50px;
-    color: #000; 
-  }
-  .pc_menu ul {
-    display: flex;
-    justify-content: center;
-  }
-  .pc_menu ul li {
-    display: flex;
-    justify-content: space-around;
-    width: 25%;
-    width: 254.8px;
-    height: 50px;
-    line-height: 55px;
-    text-align: center;
-    transition: 0.3s;
-  }
-
-
-
-
-
-
-
-
-
-
-
-  .menu_sht {
+    height: 200px;
     position: absolute;
-    z-index: 11;
-    top: 50px;
+    top: 0;
     left: 0;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+
+
+
+
+  .event_slickMenu {
     width: 100%;
-    height: 300px;
-    padding: 15px 0;
-    box-sizing: border-box;
-    background-color: #fff;
-    visibility: hidden;
-    /* 히든! */
-  }
-  .menu_sht a {
-  font-size: 16px;
-  font-weight: normal;
-  }
-
-
-  .pc_menu ul li:nth-child(1):hover .menu_sheet1,
-  .pc_menu ul li:nth-child(2):hover .menu_sheet2,
-  .pc_menu ul li:nth-child(3):hover .menu_sheet3,
-  .pc_menu ul li:nth-child(4):hover .menu_sheet4,
-  .pc_menu ul li:nth-child(5):hover .menu_sheet5{
-    visibility: visible;
-  }
-  .menu_sht ul li:hover a {
-    border-bottom: 3px solid #F55050;
-  }
-
-/*   @keyframes full_dows {
-    0% {visibility: visible;}
-    100% {visibility: visible;}
-  } */
-
-
-
-  .menu_sht ul{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    width: 400px;
-    height: 270px;
-    border-left: 1px solid #bbb;
-  }
-
-  .menu_sht ul li{
-    display: flex;
-    justify-content: flex-start;
-    width: 400px;
-    height: 40px;
-    line-height: 45px;
-    text-align: left;
-    padding-left: 15px;
-    box-sizing: border-box;
-  }
-
-  .menu_sheet3 .menu_ul3_1,
-  .menu_sheet4 .menu_ul4_1 {
-    width: 200px;
-  }
-  .menu_sheet3 .menu_ul3_2,
-  .menu_sheet4 .menu_ul4_2 {
-    width: 200px;
-    border: none;
-  }
-
-
-
-  .menu_sht_img {
-    display: flex;
-    justify-content: space-around;
-    width: 487px;
-    height: 170px;
-
-  }
-  .menu_sht_img h1 {
-    width: 200px;
-    height: 170px;
-    padding: 15px;
-    box-sizing: border-box;
-    text-align: left;
-    font-size: 35px;
-    font-family: 'Anton';
-    letter-spacing: 3px;
   }
 
 
 
 
-  .menu_sht_img_box {
-    width: 200px;
-    height: 170px;
-    margin-top: 60px;
-  }
-
-  .menu_sht_img_box img {
-    width: 100%;
-    height: auto;
-  }
-  .menu_sheet1_img_box,
-  .menu_sheet2_img_box {
-    margin-top: 100px;
-  }
-  .menu_sheet5_img_box {
-    margin-top: 5px;
-  }
 
 
-
-  .menu_sht_eve {
-    width: 387px;
-    height: 270px;
-  }
-  .menu_sht_eve_box {
-    width: 207px;
-    height: 270px;
-    margin-left: 95px;
-  }
-  .menu_sht_eve_box img {
-    width: 100%;
-    height: auto;
-  }
 
   .visual_main {
     width: 100%;
@@ -198,11 +50,22 @@
     margin: 0 auto;
   }
   .visual_main {
+    position: relative;
     overflow: hidden;
   }
   .visual_main video {
     padding-top: 33px;
     scale: 1.5;
+  }
+  .visual_text {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 50px;
+  }
+  .visual_text a {
+    color: #eee;
   }
   .new_product_item_mobile {
     padding-top: 80px;
@@ -210,34 +73,32 @@
   }
   .new_product_item_mobile_box {
     width: 970px;
-    height: 700px;
+    height: 600px;
     margin: 0 auto;
   }
   .new_product_silck {
-    height: 500px;
+    height: 700px;
   }
   .slick-active {
     scale: 0.8;
   }
   .sck {
-    margin-top: 30px;
+    margin-top: 150px;
     font-size: 16px;
     font-weight: bold;
     color: #777;
+    transition: 0.3s;
   }
   .slick-center {
-    margin-top: 20px;
+    margin-top: 100px;
     scale: 1.5;
   }
   .sck p {
     color: #444;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
   .slick-list {
-    height: 500px;
-  }
-  .new_product_silck {
-    height: 400px;
+    height: 1000px;
   }
   .sck {
     height: 200px;
@@ -270,7 +131,7 @@
   .item_item,
   .item_item2 {
     position: relative;
-    width: 318.5px;
+    width: 250px;
     height: 215px;
     overflow: hidden;
     font-size: 14px;
@@ -285,25 +146,29 @@
   .item_item p,
   .item_item2 p {
     font-size: 18px;
+    font-size: bold;
     height: 80px;
     line-height: 80px;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 0;
   }
   .item_item2 p {
     line-height: 25px;
     padding-top: 15px;
   }
 
+
   .item_hover {
+    font-family: 'Noto Sans KR', sans-serif;
     position: absolute;
     left: 0;
     top: -100%;
-    width: 318.5px;
+    width: 250px;
     height: 215px;
     padding: 20px;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    border: 2px solid #eee;
   }
 
   .item_hover p {
@@ -315,6 +180,11 @@
     margin-top: 60px;
     font-size: 14px;
     font-weight: bold;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .Oreo_hover p,
+  .GreenTea_hover p {
+    margin-top: 30px;
   }
   .MaximSingle1_hover,
   .MaximSingle2_hover {
@@ -383,7 +253,11 @@
     height: 355px;
   }
 
+  .news_banner, .contribute_box_tab {
+    height: 350px;
+  }
   .contribute_banner {
+    height: 350px;
     margin-right: 0;
   }
   .bottom_banner {
@@ -405,7 +279,7 @@
   .history_banner,
   .magazine_banner,
   .food_safety_banner {
-    width: 414.6666px;
+    width: 328px;
     height: 330px;
     margin-right: 10px;
   }
@@ -432,19 +306,19 @@
     height: 30px;
   }
   .gnb {
-    height: 30px;
+    height: 35px;
     font-size: 12px
   }
   .gnb_top {
     width: 70px;
-    height: 30px;
+    height: 35px;
     line-height: 30px;
     font-weight: bold;
   }
   .gnb_box {
     position: relative;
     width: 100%;
-    height: 30px;
+    height: 35px;
     margin: 0 auto;
     top: 0;
   }
@@ -468,55 +342,13 @@
     margin: 0;
   }
 
-  .pc_menu ul li:hover {
-    background-color: #F55050;
-    border-radius: 5px;
-  }
-  .pc_menu ul li:hover a {
-    color: #fff;
-  }
-  .pc_menu ul li .menu_sheet1 li a,
-  .pc_menu ul li .menu_sheet2 li a,
-  .pc_menu ul li .menu_sheet3 li a,
-  .pc_menu ul li .menu_sheet4 li a,
-  .pc_menu ul li .menu_sheet5 li a {
-    color: #000;
-  }
-  .pc_menu ul li .menu_sheet1 li,
-  .pc_menu ul li .menu_sheet2 li,
-  .pc_menu ul li .menu_sheet3 li,
-  .pc_menu ul li .menu_sheet4 li,
-  .pc_menu ul li .menu_sheet5 li {
-    background-color: #fff;
-  }
+
   .more_bttn a{
     display: block;
   }
   .footer{
     width: 100%;
     margin: 0 auto;
-  }
-  /* FOOTER CHECK박스 영역 백그라운드 빼기 */
-  /* TITLE 글자 크기 수정해야함. */
-  /* 전체적인 색상 넣거나 수정해야함 */
-  /* 예를 들어 타이틀 백그라운드 #eee */
-
-
-  .brand_site_txt {
-    width: 190px;
-    left: 25px;
-    top: 0;
-  }
-  .family_site_txt,
-  .community_site {
-    width: 191px;
-    left: 229px;
-    top: 0;
-    padding: 0 10px 10px;
-    box-sizing: border-box;
-  }
-  .community_site {
-    left: 433px;
   }
   
   .tit {
@@ -530,14 +362,14 @@
   .brand_product_banner{
     width: 100%;
     height: 700px;
-    margin-bottom: 100px;
-    margin-top: 100px;
-    margin: 0 auto;
+    margin: 100px auto 40px;
+    float: left;
   }
   .brand_label_box label {
     height: 30px;
     font-size: 12px;
     margin-left: 5px;
+    padding: 5px 10px;
   }
   .brand_label_box .brand_label1 {
     margin-left: 10px;
@@ -602,7 +434,7 @@
   .brand_label_box {
     left: 50%;
     transform: translateX(-50%);
-    width: 866px;
+    width: 970px;
     height: 60px;
     background-color: unset;
   }
@@ -616,39 +448,46 @@
     padding: 0;
     line-height: 48px;
   }
-
-  .wrap {
-    position: relative;
+  .brand_img {
+    width: 150px;
   }
-  .header {
-    width: 100%;
-    height: 195px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  .menu_fix {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #000;
-  }
-  .menu_fix a {
-    color: #000;
+  .brand_txt {
+    bottom: -60px;
     font-size: 14px;
-    font-weight: bold;
   }
-  .menu_sht a {
-    font-size: 16px;
-    font-weight: normal;
+  .brand_oreo_txt1,
+  .brand_oreo_txt2,
+  .brand_oreo_txt3,
+  .brand_oreo_txt4 {
+    bottom: -10px;
   }
+  .brand_phillaCheese_txt1 {
+    bottom: -10px;
+  }
+  .brand_top_txt1,
+  .brand_top_txt2,
+  .brand_top_txt3 {
+    bottom: -25px;
+  }
+  .brand_mitte_txt1,
+  .brand_mitte_txt2 {
+    bottom: -20px;
+  }
+  .brand_honey_txt1,
+  .brand_honey_txt2 {
+    bottom: -50px;
+  }
+
+
+
+
+
+
+
   .max_plant_text h5{display: none;}
   .max_plant_text h3{display: block;}
   .max_plant_banner {
-    margin: 0 auto;
+    margin: 0 auto 100px;
   }
   .max_plant_box {
     width: 1000px;
@@ -700,13 +539,168 @@
   }
   .contribute_box_tab {
     height: 330px;
-    margin-top: 0;
+    margin-top: 30px;
     margin-bottom: 30px;
+  }
+
+
+
+
+
+  
+
+
+.logo {
+  margin-top: 20px;
+}
+
+.lnb {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.main_menu {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* menu_box  */
+.menu_box ul {
+  width: 1000px;
+  margin: 0 auto;
+}
+.menu_box ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.menu_box ul li {
+  width: 20%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  
+}
+.menu_box ul li a {
+  color: #fff;
+  display: block;
+}
+
+
+
+
+.main_menu .main_sheet {
+  position: absolute;
+  top: 50px; left: 0;
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+}
+.main_menu .main_sheet ul {
+  width: 40%;
+  height: 300px;
+  float: left;
+}
+.main_menu .sheet_outer {
+  width: 1000px;
+  margin: 0 auto;
+}
+.main_menu .sheet_outer ul {
+  padding: 20px 40px;
+  line-height: 40px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.main_menu .sheet_outer ul li:hover a{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.main_menu .name {
+  position: relative;
+  width: 30%;
+  height: 300px;
+  float: left;
+}
+.main_menu .name h1 {
+  margin-left: 40px;
+  margin-top: 20px;
+  font-family: 'Anton';
+  letter-spacing: 2px;
+}
+
+
+.main_menu .sheet_box1 {display: none;}
+.main_menu .sheet_box2 {display: none;}
+.main_menu .sheet_box3 {display: none;}
+.main_menu .sheet_box4 {display: none;}
+.main_menu .sheet_box5 {display: none;}
+
+.main_menu .sheet_box3 ul,
+.main_menu .sheet_box4 ul {
+  width: 20%;
+}
+
+
+
+.main_menu .menu_img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 220px;
+  height: 250px;
+  text-align: right;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.main_menu .menu_img img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+/* eve_box */
+.main_menu .eve_box {
+  position: relative;
+  width: 30%;
+  height: 300px;
+  float: left;
+}
+.main_menu .eve_outer {
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+}
+.main_menu .eve_outer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.menu_fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+.menu_fix a {
+  color: #000 !important;
+  font-size: 14px;
+  font-weight: bold;
   }
 }
 
 
 @media all and (min-width:1274px) {
+  .menu_box ul {
+    width: 1274px;
+  }
   .max_plant_box {
     width: 1274px;
   }
@@ -729,11 +723,7 @@
   .header {
     width: 100%;
   }
-  .nav_PC {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-  }
+
   .brd_sht {
     width: 1274px;
   }
@@ -744,15 +734,40 @@
     transform: translateX(-50%);
   }
 
-
+  .history_banner,
+  .magazine_banner,
+  .food_safety_banner {
+    width: 418px;
+  }
   .news_text {
     width: 369.5px;
   }
   .news_banner,
   .contribute_box_tab {
     width: 629.5px;
-    height: 300px;
+    height: 350px;
     margin-right: 15px;
     float: left;
   }
+  .top_box {
+    width: 160px;
+  }
+  .gnb_box {
+    width: 1274px;
+    margin: 0 auto;
+  }
+  .language_box {
+    float: right;
+  }
+  .item_item,
+  .item_item2 {
+    width: 318.5px;
+  }
+  .item_hover {
+    width: 318.5px;
+  }
+
+
+
+
 }

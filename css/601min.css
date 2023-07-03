@@ -23,18 +23,18 @@
     top: 12px;
     right: 15px;
   }
-  .title p {font-size: 32px;}
+  .title p {font-size: 28px;}
   .tltle h3 {font-size: 14px;}
   .new_product_title_mobile {
     margin-bottom: -120px;
   }
   .new_product_title_mobile p {
     width: 220px;
-    height: 60px;
+    height: 50px;
   }
   .CF_title p {
     width: 140px;
-    height: 60px;
+    height: 50px;
   }
   .news_banner,
   .contribute_banner {
@@ -68,6 +68,7 @@
   .ham_bar {
     display: block;
     border-left: 1px solid #eee;
+    top: 650px;
   }
   .ham_sns {
     border: none;
@@ -94,14 +95,15 @@
     height: 110px;
     margin-bottom: 30px;
   }
-
-
   .la_hm {
     font-size: 30px;
     top: 66px;
     left: 15px;
     margin-left: 10px;
   }
+
+
+
   .new_product_silck .slick-next::after,
   .new_product_silck .slick-prev::after {
     top: 240px;
@@ -119,7 +121,9 @@
     height: 450px;
   }
   .sck p {
-    font-size: 12px;}
+    margin-top: -20px;
+    font-size: 12px;
+  }
   .sck {
     margin-top: 100px;
     font-size: 10px;
@@ -133,12 +137,24 @@
     scale: 0.5;
   }
   .sub_text {
+    text-align: center;
     display: block;
+    margin-top: 5px;
+    font-size: 14px;
   }
 
   .slick-center {
     margin-top: 180px;
     scale: 1.5;
+  }
+  .slick-center p {
+    margin-top: -20px;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .slick-center .sub_text {
+    font-size: 16px;
+    margin-left: -9%;
   }
   .CF_banner {
     padding-bottom: 50px;
@@ -206,106 +222,7 @@
   .history_banner {
     margin-right: 2%;
   }
-  .footer_box {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .foot_top {
-    width: 100%;
-    flex-direction: row;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-    margin-bottom: 15px;
-  }
 
-  .foot_top_txt {
-    width: 50%;
-    order: 1;
-    padding: 5px 0;
-    box-sizing: border-box;
-    border-bottom: none;
-  }
-  .foot_text_box {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0 10px;
-    order: 3;
-  }
-  .foot_chkbox {
-    width: 50%;
-    height: 30px;
-    margin: 0;
-    order: 2;
-  }
-  .label_brand, .label_familty, .label_community{
-    width: 30%;
-    margin: 0;
-    margin-right: 2%;
-  }
-  .label_brand {
-    margin-left: 4%;
-  }
-
-  .site_box {
-    width: 100%;
-    height: 190px;
-    font-size: 14px;
-    left: 7px;
-    bottom: 0;
-    background-color: #fff;
-  }
-  .brand_site_txt {
-    width: 29.5%;
-    left: 16px;
-    top: 0;
-  }
-  .family_site_txt,
-  .community_site {
-    width: 29.5%;
-    left: 148px;
-    top: 0;
-    padding: 0 10px 10px;
-    box-sizing: border-box;
-  }
-
-  .community_site {
-  left: 280px;
-  }
-  .site_box a {
-    font-size: 14px;
-    color: #777;
-  }
-  .site_box li:last-child, .site_box li:last-child {
-    right: 15px;
-  }
-
-  
-  .foot_text_box ul li {
-    padding: 0;
-  }
-  .foot_text_box ul li:nth-child(1),
-  .foot_text_box ul li:nth-child(2) {
-    width: 100%;
-    height: 30px;
-  }
-  .foot_text_box ul li:nth-child(2) {
-  }
-  .foot_text_box ul li:nth-child(3),
-  .foot_text_box ul li:nth-child(7) {
-  display: block;
-  }
-  .foot_text_box ul li:nth-child(4) {
-    margin-top: 10px;
-  }
-  .foot_text_box ul li:nth-child(5) {
-    margin-bottom: 10px;
-  }
-  .foot_text_box ul li:nth-child(2),
-  .foot_text_box ul li:nth-child(6) {
-    display: none;
-  }
 
 
   .item_label_box {
@@ -320,7 +237,7 @@
   }
   .item_box_title p {
     width: 235px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
   }
   .sheet_tap {
     width: 100%;
@@ -333,9 +250,19 @@
     width: 25%;
     height: 145px;
   }
+  .item_label_box .item_label4,
+  .item_label_box .item_label5,
+  .item_label_box .item_label6 {
+    display: none;
+  }
+  #more_chk6:checked ~ .item_sheet_box .item_sheet2 {
+    display: block;
+    animation-name: sheet_ani;
+    animation-duration: 0.7s;
+  }
 
   #more_chk1:checked ~ .item_label_box .item_label2 {
-    display: none;
+    display: block;
   }
   #more_chk1:checked ~ .item_label_box .item_label1 {
     display: none;
@@ -359,7 +286,12 @@
     animation-name: sheet_ani;
     animation-duration: 0.7s;
   }
-  #more_chk3:checked ~ .item_sheet_box .item_sheet4 {
+  #more_chk2:checked ~ .item_sheet_box .item_sheet3 {
+    display: none;
+    animation-name: sheet_ani;
+    animation-duration: 0.7s;
+  }
+  #more_chk2:checked ~ .item_sheet_box .item_sheet4 {
     display: none;
     animation-name: sheet_ani;
     animation-duration: 0.7s;
@@ -367,7 +299,7 @@
 
 
   #more_chk2:checked ~ .item_label_box .item_label3 {
-    display: none;
+    display: block;
   }
   #more_chk2:checked ~ .item_label_box .item_label2 {
     display: none;
@@ -376,21 +308,7 @@
     display: none;
   }
   
-  /*
-  #chk03:checked ~ .label01 {
-    display: block;
-  }
-   */
-  #more_chk3:checked ~ .item_label3 {
-    display: none;
-  }
-  #more_chk3:checked ~ .item_label3 {
-    display: none;
-  }
-  #more_chk3:checked ~ .item_label2 {
-    display: none;
-  }
-/* item_banner_tab1 */
+
 
 
 
@@ -471,10 +389,21 @@
   height: 350px;
 }
 .brand_label_box {
-  width: 100%;
-  height: 50px;
+  display: flex;
+  line-height: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
+.brand_label_box label {
+  margin-top: 10px;
+  padding: 0 5px;
+  line-height: 33px;
+}
+.brand_label1 {
+  margin-left: 0%;
+}
 .max_plant_text h3{display: none;}
 .max_plant_text h5{display: block;}
 .max_plant_box {
@@ -483,10 +412,13 @@
 }
 .max_plant_title {
   height: 90px;
+  margin-bottom: 10px;
 }
 .max_plant_title p {
   font-size: 28px;
+  padding-bottom: 10px;
 }
+
 .max_plant_text {
   height: 80px;
 }
@@ -517,6 +449,75 @@
 }
 
 
+
+
+  
+.foot_top {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+
+.foot_top_txt {
+  width: 50%;
+  order: 1;
+  padding: 5px 0;
+  font-size: 12px;
+  box-sizing: border-box;
+  border-bottom: none;
+  letter-spacing: -0.5px;
+}
+.foot_text_box {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.foot_text_box ul li {
+  padding: 0;
+}
+.foot_text_box ul li:nth-child(1),
+.foot_text_box ul li:nth-child(2) {
+  width: 100%;
+  height: 30px;
+}
+.foot_text_box ul li:nth-child(2) {
+}
+.foot_text_box ul li:nth-child(3),
+.foot_text_box ul li:nth-child(7) {
+  display: block;
+}
+.foot_text_box ul li:nth-child(4) {
+  margin-top: 10px;
+}
+.foot_text_box ul li:nth-child(5) {
+  margin-bottom: 10px;
+}
+.foot_text_box ul li:nth-child(2),
+.foot_text_box ul li:nth-child(6) {
+  display: none;
+}
+
+
+.foot_select {
+  right: 29px;
+  width: 50%;
+  top: 10px;
+  right: -10px;
+}
+.foot_select select {
+  font-size: 10px;
+  width: 30%;
+}
+
+
+
+
+
 }
 
 
@@ -524,5 +525,10 @@
   .new_product_silck {
     height: 600px;
   }
+  .sck p {
+    margin-top: -25px;
+  }
+  .foot_top_txt {
+    letter-spacing: 1px;
+  }
 }
-

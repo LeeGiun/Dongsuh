@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./jquery-3.6.4.min.js.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+  <link rel="stylesheet" href="./css/SubPage2.css">
+  <link rel="stylesheet" href="./font/Noto_Sans_KR_FONT/stylesheet.css">
+  <link rel="stylesheet" href="./font/Anton_FONT/stylesheet.css">
+  <link rel="stylesheet" href="./font/Sunflower_FONT/stylesheet.css">
+  <link rel="stylesheet" href="./font/Black_Han_Sans_FONT/stylesheet.css">
+  <title>DongSuh_Food</title>
+</head>
+<body>
+  <div class="wrap">
+    
+    <header class="header">
+
+      <div class="gnb gnb_PC">
+        <div class="gnb_box">
+          <div class="top_box">
+            <div class="login_box gnb_top">
+              <a href="#!">로그인 <i class="fas fa-power-off"></i></a>
+            </div> <!-- // .login_box END -->
+            <p class="language_box gnb_top">
+              <a href="#!">언어선택 <i class="fas fa-globe-americas"></i></a>
+            </p>
+          </div>
+        </div> <!-- // .gnb_box END -->
+      </div> <!-- // .gnb END -->
+
+      <div class="logo">
+        <a href="./index.html" class="logo_subBox">
+          <div class="logo_box">
+            <h1>동서식품</h1>
+          </div>
+          <div class="logo_box_img">
+            <img src="./images/ham_logo_mobile.png" alt="">
+          </div>
+        </a>
+      </div> <!-- // .logo END -->
+
+
+      <nav class="nav_mobile">
+        <div class="ham_menu">
+          <input type="checkbox" id="mobile_menu_chk">
+          <label for="mobile_menu_chk" class="label_ham1 la_hm">
+            <i class="fas fa-bars"></i>
+          </label> <!-- // .label_ham1 la_hm END -->
+          <label for="mobile_menu_chk" class="label_ham2 la_hm">
+            <i class="fas fa-bars"></i>
+          </label> <!-- // .label_ham2 la_hm END -->
+          <label for="mobile_menu_chk" class="ham_menu_sheet1">
+            <div class="ham_menu_sheet">
+              <div class="ham_logo">
+                <img src="./images/ham_logo_mobile.jpg" alt="">
+              </div>
+              <a href="./SubPage2.html" class="ham_1 ham_menu">
+                <span>회사소개</span>
+                <span class="span_2"><i class="fas fa-angle-right"></i></span>
+              </a>
+              <a href="./SubPage2.html" class="ham_2 ham_menu">
+                <span>제품안내</span>
+                <span class="span_2"><i class="fas fa-angle-right"></i></span>
+              </a>
+              <a href="./EvePage1.html" class="ham_3 ham_menu">
+                <span>이벤트</span>
+                <span class="span_2"><i class="fas fa-angle-right"></i></span>
+              </a>
+              <a href="./EvePage1.html" class="ham_4 ham_menu">
+                <span>사회공헌</span>
+                <span class="span_2"><i class="fas fa-angle-right"></i></span>
+              </a>
+              <a href="./EvePage1.html" class="ham_5 ham_menu">
+                <span class="span_bttn">고객의소리</span>
+                <span class="span_bttn span_2"><i class="fas fa-angle-right"></i></span>
+              </a>
+              <p href="#!" class="ham_X">
+                <i class="fas fa-times"></i>
+              </p>
+              <ul class="ham_foot">
+                <li>대표번호 1588-2233</li>
+                <li>고객상담실 080-023-9114</li>
+                <li>[부평공장] 인천 부평구 새벌로 55</li>
+                <li>[서울사무소] 서울시 마포구 독막로 324<br />(도화동, 동서빌딩)</li>
+              </ul>
+              <div class="ham_bar"></div>
+              <div class="ham_sns">
+                <h3>동서 SNS</h3>
+                <div class="ham_sns_img1 ham_sns_total">
+                  <a href="#!"><img src="./images/SNS_1.jpg" alt=""></a>
+                </div>
+                <div class="ham_sns_img2 ham_sns_total">
+                  <a href="#!"><img src="./images/SNS_2.jpg" alt=""></a>
+                </div>
+                <div class="ham_sns_img3 ham_sns_total">
+                  <a href="#!"><img src="./images/SNS_3.png" alt=""></a>
+                </div>
+                <div class="ham_sns_img4 ham_sns_total">
+                  <a href="#!"><img src="./images/SNS_4.jpg" alt=""></a>
+                </div>
+                <div class="ham_sns_img5 ham_sns_total">
+                  <a href="#!"><img src="./images/SNS_5.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="ham_box_box">
+                <p>Copyright 2017 Dongsuh Foods Corporation. <br /> All rights reserved.</p>
+              </div>
+
+            </div> <!-- // .ham_menu_sheet END -->
+          </label> <!-- // .ham_menu_sheet1 END -->
+        </div> <!-- // .ham_menu END -->
+      </nav> <!-- // .nav_mobile END -->
+
+      <div class="lnb">
+        <div class="main_menu">
+          <div class="menu_box">
+            <ul>
+              <li><a href="#!">회사소개</a></li>
+              <li><a href="#!">제품안내</a></li>
+              <li><a href="#!">이벤트</a></li>
+              <li><a href="#!">사회공헌</a></li>
+              <li><a href="#!">고객의소리</a></li>
+            </ul>
+          </div>
+          <div class="sheet_box1 main_sheet">
+            <div class="sheet_outer">
+              <div class="menu_name1 name">
+                <h1>
+                  Dong Suh<br/>
+                  Foods
+                </h1>
+                <div class="menu_img">
+                  <img src="./images/menu_img1.png" alt="">
+                </div>
+              </div>
+              <ul>
+                <li><a href="./SubPage2.html">동서식품</a></li>
+                <li><a href="./SubPage2.html">식품안전센터</a></li>
+                <li><a href="./SubPage2.html">산업보건안전방침</a></li>
+              </ul>
+              <div class="eve_box">
+                <div class="eve_outer">
+                  <a href="./EvePage1.html">
+                    <img src="./images/menu_event.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sheet_box2 main_sheet">
+            <div class="sheet_outer">
+              <div class="menu_name2 name">
+                <h1>Products</h1>
+                <div class="menu_img">
+                  <img src="./images/menu_img2.png" alt="">
+                </div>
+              </div>
+              <ul>
+                <li><a href="./SubPage2.html">브랜드</a></li>
+                <li><a href="./SubPage2.html">제품소개</a></li>
+              </ul>
+              <div class="eve_box">
+                <div class="eve_outer">
+                  <a href="./EvePage1.html">
+                    <img src="./images/menu_event.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sheet_box3 main_sheet">
+            <div class="sheet_outer">
+              <div class="menu_name3 name">
+                <h1>
+                  Media<br/>
+                  Center
+                </h1>
+                <div class="menu_img">
+                  <img src="./images/menu_img3.png" alt="">
+                </div>
+              </div>
+              <ul class="sht_bx">
+                <li><a href="./EvePage1.html">뉴스</a></li>
+                <li><a href="./EvePage1.html">이벤트</a></li>
+                <li><a href="./EvePage1.html">동서식품 홍보영상</a></li>
+                <li><a href="./EvePage1.html">동영상 레시피</a></li>
+                <li><a href="./EvePage1.html">TV CF</a></li>
+              </ul>
+              <ul class="sht_bx">
+                <li><a href="./EvePage1.html">웹진 삶의 향기</a></li>
+                <li><a href="./EvePage1.html">커피 클래스</a></li>
+                <li><a href="./EvePage1.html">커피 테이스트</a></li>
+                <li><a href="./EvePage1.html">소셜 미디어</a></li>
+              </ul>
+              <div class="eve_box">
+                <div class="eve_outer">
+                  <a href="./EvePage1.html">
+                    <img src="./images/menu_event.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sheet_box4 main_sheet">
+            <div class="sheet_outer">
+              <div class="menu_name4 name">
+                <h1>
+                  CSR
+                </h1>
+                <div class="menu_img">
+                  <img src="./images/menu_img4.png" alt="">
+                </div>
+              </div>
+              <ul class="sht_bx">
+                <li><a href="./EvePage1.html">삶의향기 동서문학상</a></li>
+                <li><a href="./EvePage1.html">맥심커피배 입신최강전</a></li>
+                <li><a href="./EvePage1.html">동서커피 클래식</a></li>
+              </ul>
+              <ul class="sht_bx">
+                <li><a href="./EvePage1.html">동서식품 장학회</a></li>
+                <li><a href="./EvePage1.html">맥심 사랑의 향기</a></li>
+                <li><a href="./EvePage1.html">동서식품 꿈의 도서관</a></li>
+              </ul>
+              <div class="eve_box">
+                <div class="eve_outer">
+                  <a href="./EvePage1.html">
+                    <img src="./images/menu_event.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sheet_box5 main_sheet">
+            <div class="sheet_outer">
+              <div class="menu_name5 name">
+                <h1>
+                  Customer<br/>
+                  Support
+                </h1>
+                <div class="menu_img">
+                  <img src="./images/menu_img5.png" alt="">
+                </div>
+              </div>
+              <ul>
+                <li><a href="./EvePage1.html">FAQ</a></li>
+                <li><a href="./EvePage1.html">제품 관련 문의 및 불편사항</a></li>
+                <li><a href="./EvePage1.html">기타 문의</a></li>
+                <li><a href="./EvePage1.html">소비자중심경령(CCM)</a></li>
+              </ul>
+              <div class="eve_box">
+                <div class="eve_outer">
+                  <a href="./EvePage1.html">
+                    <img src="./images/menu_event.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </header> <!-- // .header END -->
+
+
+
+
+
+
+    <div class="company">
+      <section class="company_page1 page">
+        <div class="company_box1">
+          <div class="company_title">
+            <div class="company_title_text">
+              <h1>동서 식품 소개</h1>
+              <h4>생활 속, 향기처럼 스며드는 기업,<br/>동서 식품을 소개합니다.</h4>
+            </div>
+          </div> <!-- title END -->
+          <div class="company_subTitle">
+            <h2>동서 식품은<br/>1968년 5월 23일 출범 후,<br/> 꾸준한 발전을 거듭해 왔습니다.</h2>
+            <h4>한국 식품 문화의 선진화를 선도해 오고 있는<br/> 동서 식품은 소비자 분들의 건강, 즐거움, 편리를<br/> 창조하는 글로벌 생활 문화 기업으로<br/> 발전 해 나가겠습니다.</h4>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="company_page2 page">
+        <div class="company_box2">
+          <div class="company_main1">
+            <div class="company_main_box1 main_box">
+              <h2>K-Food로 세계인의 식탁에 즐거움을 더합니다.</h2>
+              <h4>커피를 선두로 다양한 제품들과 글로벌 진출을<br/>선도하는 기업을 목표로, 건강하고 편리한<br/>라이프 스타일을 나누고자 합니다.</h4>
+            </div>
+            <div class="company_main_box2 main_box  main_img">
+            </div>
+            <div class="company_main_box3 main_box">
+              <h2>남녀 노소 모두가 좋아하는 기업으로 글로벌 시대를 열어 갑니다.</h2>
+              <h4>초심을 잃지 않는 경영 이념으로<br/>시작부터 끝까지 소비자가 신뢰하고 믿을 수 있는<br/>동서식품이 되고자 합니다.</h4>
+            </div>
+            <div class="company_main_box4 main_box  main_img">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="company_page3 page">
+        <div class="company_box3">
+          <div class="company_main2">
+            <div class="company_main_box5 main_box">
+              <h2>실천과 나눔으로 상생하는 글로벌 시대를 열어갑니다.</h2>
+              <h4>동서 식품이 가장 잘 할 수 있고 사회적 관심이 필요한<br /> 영역에서 더불어 사는 사회를 구현하고자<br />'동서식품 장학회', '맥심 사랑의 향기', '꿈의
+                도서관'으로<br /> 다양한 사회 공헌 활동을 실천하고 있습니다. </h4>
+            </div>
+            <div class="company_main_box6 main_box main_img">
+            </div>
+            <div class="company_main_box7 main_box">
+              <h2>CEO 메세지</h2>
+              <h4>안녕하십니까?<br />동서 식품 대표 김광수입니다.<br />동서식품을 찾아주신 모든 분께<br />진심으로 감사드립니다.</h4>
+              <div class="site_box"><a href="#!">→</a></div>
+              <div class="CEO_img">
+                <img src="./css/back_img/sub_img/CEO3.png" alt="CEO_img">
+              </div>
+            </div>
+            <div class="company_main_box8 main_box">
+              <div class="company_main_box8_back"></div>
+              <h2>연혁</h2>
+              <h4>인스턴트 커피 제조설비 도입 및 시공 완료 후<br /> 5년 뒤 최초로 호주에 인스턴트 커피 50톤 수출하여<br /> 다양한 제품들을 출시하며 성장을 거듭해왔습니다.
+                <div class="site_box"><a href="#!">→</a></div>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="company_page4 page">
+        <div class="company_box4">
+          <div class="company_main3">
+            <div class="company_main_box9 main_box">
+              <h2>찾아오시는길</h2>
+              <h4>생활속에 같이 함께하는 기업,<br/> 동서 식품으로 오시는길을 소개합니다.</h4>
+              <h5>사무소, 연구소, 지점, 영업소, 물류센터</h5>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="footer_box">
+            <div class="foot_top">
+              <ul class="foot_top_txt">
+                <li><a href="#!">개인정보처리방침</a></li>
+                <li></li>
+                <li><a href="#!">이용약관</a></li>
+                <li></li>
+                <li><a href="#!">영상정보처리기기운영관리방침</a></li>
+              </ul>
+              <div class="foot_select">
+                <select name="foot_menu1" onchange="if(this.value) window.open(this.value);" id="foot_menu_box1">
+                  <option value="">브랜드 사이트</option>
+                  <option value="">==================</option>
+                  <option value="./index.html" class="op_kanu">카누</option>
+                  <option value="./index.html">포스트</option>
+                </select>
+                
+                <select name="foot_menu2" onchange="if(this.value) window.open(this.value);" id="foot_menu_box2">
+                  <option value="">패밀리 사이트</option>
+                  <option value="">==================</option>
+                  <option value="./index.html">삶의향기 동서문학상</option>
+                  <option value="./index.html">(주) 동서</option>
+                </select>
+                
+                <select name="foot_menu3" onchange="if(this.value) window.open(this.value);" id="foot_menu_box2">
+                  <option value="">커뮤니티</option>
+                  <option value="">==================</option>
+                  <option value="./index.html">그녀들의 커피이야기</option>
+                </select>
+              </div>
+            </div>
+            <div class="foot_btn1">
+              <div class="foot_text_box">
+                <ul>
+                  <li>[부평공장] 인천 부평구 새벌로 55</li>
+                  <li>[서울사무소] 서울시 마포구 독막로 324 <br /> (도화동, 동서빌딩)</li>
+                  <li>[서울사무소] 서울시 마포구 독막로 324 (도화동, 동서빌딩)</li>
+                  <li>대표번호 1588-2233</li>
+                  <li>고객상담실 080-023-9114 </li>
+                  <li>Copyright 2017 Dongsuh Foods Corporation. <br /> All rights reserved.</li>
+                  <li>Copyright 2017 Dongsuh Foods Corporation. All rights reserved.</li>
+                </ul>
+              </div> <!-- // .foot_text_box END -->
+            </div> <!-- // ·foot_btn1 END -->
+          </div>
+      
+        </footer> <!-- // .footer END -->
+      </section>
+
+
+
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+
+
+
+
+  $(window).scroll(function(){
+    if ($(window).scrollTop() >= 140) {
+    $('.lnb').addClass('menu_fix')
+      } else {
+    $('.lnb').removeClass('menu_fix')
+      }
+  })
+
+  window.onload = function () {
+    const elm = ".page";
+      $(elm).each(function (index) {
+      // 개별적으로 Wheel 이벤트 적용
+      $(this).on("mousewheel DOMMouseScroll", function (e) {
+        e.preventDefault();
+        let delta = 0;
+        if (!event) event = window.event;
+        if (event.wheelDelta) {
+          delta = event.wheelDelta / 120;
+          if (window.opera) delta = -delta;
+          } else if (event.detail)
+            delta = -event.detail / 3;
+            let moveTop = $(window).scrollTop();
+            let elmSelecter = $(elm).eq(index);
+            // 마우스휠을 위에서 아래로
+            if (delta < 0) {
+              if ($(elmSelecter).next() != undefined) {
+                try{
+                  moveTop = $(elmSelecter).next().offset().top;
+                } catch(e) {}
+              }
+                  // 마우스휠을 아래에서 위로
+            } else {
+              if ($(elmSelecter).prev() != undefined) {
+                try{
+                  moveTop = $(elmSelecter).prev().offset().top;
+                }catch(e){}
+              }
+            }
+            // 화면 이동
+            $("html,body").stop().animate({
+              scrollTop: moveTop + 'px'
+            }, {
+              duration: 1000, complete: function () {
+            }
+            });
+      });
+      });
+  }
+
+
+  $(function() {
+    $('h2 > br').remove()
+  })
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuLi = document.querySelectorAll('.menu_box ul li')
+      const sheets = [
+        document.querySelector('.sheet_box1'),
+        document.querySelector('.sheet_box2'),
+        document.querySelector('.sheet_box3'),
+        document.querySelector('.sheet_box4'),
+        document.querySelector('.sheet_box5')
+      ]
+    
+      menuLi.forEach((li, index) => {
+        li.addEventListener('mouseover', () => {
+          sheets[index].style.display = 'block'
+        })
+        li.addEventListener('mouseout', () => {
+          sheets[index].style.display = 'none'
+        })
+      })
+
+      sheets.forEach(sheet => {
+        sheet.addEventListener('mouseover', () => {
+          sheet.style.display = 'block'
+        })
+        sheet.addEventListener('mouseout', () => {
+          sheet.style.display = 'none'
+        })
+      })
+    })
+  </script>
+
+</body>
+</html>
