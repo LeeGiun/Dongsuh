@@ -386,32 +386,32 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script>
     $(document).ready(function(){
-  $('.event_slickMenu').slick({
-    centerMode: true,
-    centerPadding: 0,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    dots: true,
-    autoplay: true,
-    autoplay: 3000,
-  });
+      $('.event_slickMenu').slick({
+        centerMode: true,
+        centerPadding: 0,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        autoplay: true,
+        autoplay: 3000,
+      });
 
-  $(window).scroll(function(){
-    if ($(window).scrollTop() >= 140) {
+      $(window).scroll(function(){
+        if ($(window).scrollTop() >= 140) {
       $('.lnb').addClass('menu_fix')
-    } else {
+        } else {
       $('.lnb').removeClass('menu_fix')
-    }
-  })
+        }
+      })
 
-
-  $(window).resize(function(){ 
-    if (window.innerWidth > 1024) {
+      $(window).resize(function(){ 
+        if (window.innerWidth > 1024) {
     // 다바이스 크기가 1024이상일때
-    } else {
-    }
-  }).resize(); 
-});
+        }
+      }).resize(); 
+    });
+
+
   </script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
